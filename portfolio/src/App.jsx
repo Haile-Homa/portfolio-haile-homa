@@ -14,10 +14,15 @@ import { projects, blogPosts } from './assets/data';
 
 import ShowBlog from "./components/Blog/ShowBlog.jsx";
 
+import PWAInstallPrompt from './components/PWAInstallPrompt'
+
+
+
 
 const App = () => {
 
   return (
+      <>
     <div className="flex flex-col min-h-screen bg-bg-primary text-text-primary">
       <Navbar />
       <main className="flex-grow pt-2 md:pt-20 !overflow-x-hidden">
@@ -45,6 +50,8 @@ const App = () => {
       </main>
       <Footer />
     </div>
+     <PWAInstallPrompt />
+    </>
   );
 }
 
