@@ -134,8 +134,6 @@ const assets = {
     /* icons */
     solidworks,
 
-    /* Vidoes */
-    engineVideo
 
     
 
