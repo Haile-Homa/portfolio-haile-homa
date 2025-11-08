@@ -58,9 +58,6 @@ import galleryapp_thumbnail from "./projectimg/galleryapp.png"
 import limitlesschat_thumbnail from "./projectimg/limitlesschat.png"
 
 
-//videos
-import engineVideo from "./videos/engine-solidwork.mp4";
-
 // icons
 import solidworks from "./icons/solidworks.png"
 
