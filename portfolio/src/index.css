@@ -1,0 +1,491 @@
+@import "tailwindcss";
+
+/* Enable manual dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* ========== LIGHT THEME ========== */
+  
+  /* Brand Colors */
+  --color-portfolio-primary: #ffffff;
+  --color-portfolio-secondary: #78D3FD;
+  --color-portfolio-tertiary: #ffb703;
+
+   /* Brand Gradients  */
+  --gradient-portfolio-primary: linear-gradient(135deg, #fff, #fff);
+  --gradient-portfolio-accent: linear-gradient(135deg, #3b82f6, #22d3ee);
+
+  /* Background Layers */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  --color-bg-tertiary: #f1f5f9;
+
+  /* Text Hierarchy */
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #6B7280;
+  --color-text-tertiary: #64748b;
+   --color-text-blue: #78D3FD;
+  --color-text-muted: #6b7280;
+
+
+  /* Component Colors */
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-primary: #3b82f6;
+  --color-border: #e5e7eb;
+
+
+
+    /* ========== SKILLS ========== */
+  --color-skill-bg: #f8fafc;
+  --color-skill-border: #000000;
+  --color-skill-text: #374151;
+  --color-skill-progress-bg: #e2e8f0;
+  --color-skill-progress-fill: #2563eb;
+
+
+
+
+
+  
+  /* ========== DARK THEME ========== */
+  
+  /* Brand Colors */
+  --color-dark-portfolio-primary: #0d1117;
+  --color-dark-portfolio-secondary: #161b22;
+  --color-dark-portfolio-tertiary: #21262d;
+
+    /* Brand Gradients 🌙 */
+  --gradient-dark-portfolio-primary: linear-gradient(135deg, #000000 45%, #161b22 45%);
+  --gradient-dark-portfolio-accent: linear-gradient(135deg, #06b6d4, #3b82f6);
+
+  /* Background Layers */
+  --color-dark-bg-primary: #03031a;
+  --color-dark-bg-secondary: #161b22;
+  --color-dark-bg-tertiary: #21262d;
+
+
+  /* Text Hierarchy */
+  --color-dark-text-primary: #f8fafc;
+  --color-dark-text-secondary: #cbd5e1;
+  --color-dark-text-tertiary: #94a3b8;
+  --color-dark-text-muted: #64748b;
+
+
+  /* Component Colors */
+  --color-dark-background: #0d1117;
+  --color-dark-surface: #161b22;
+  --color-dark-primary: #60a5fa;
+  --color-dark-border: #334155;
+
+
+  
+    /* ========== SKILLS ========== */
+  --color-dark-skill-bg: #f8fafc;
+  --color-dark-skill-border: #e2e8f0;
+  --color-dark-skill-text: #cbd5e1;
+  --color-dark-skill-progress-bg: #e2e8f0;
+  --color-dark-skill-progress-fill: #2563eb;
+
+}
+
+
+/* 
+ * Dark mode overrides
+ * When .dark class is present, override the CSS variables
+ */
+.dark {
+  /* Brand Colors */
+  --color-portfolio-primary: var(--color-dark-portfolio-primary);
+  --color-portfolio-secondary: var(--color-dark-portfolio-secondary);
+  --color-portfolio-tertiary: var(--color-dark-portfolio-tertiary);
+
+   --gradient-portfolio-primary: var(--gradient-dark-portfolio-primary);
+  --gradient-portfolio-accent: var(--gradient-dark-portfolio-accent);
+  
+
+  /* Background Layers */
+  --color-bg-primary: var(--color-dark-bg-primary);
+  --color-bg-secondary: var(--color-dark-bg-secondary);
+  --color-bg-tertiary: var(--color-dark-bg-tertiary);
+
+  /* Text Hierarchy */
+  --color-text-primary: var(--color-dark-text-primary);
+  --color-text-secondary: var(--color-dark-text-secondary);
+  --color-text-tertiary: var(--color-dark-text-tertiary);
+  --color-text-muted: var(--color-dark-text-muted);
+
+      /* text for tcs  rich text  */
+  --color-text-Quaternary:var(--color-text-Quaternary);
+  --color-text-Quinary: var(--color-text-Quinary);
+
+
+
+  /* Component Colors */
+  --color-background: var(--color-dark-background);
+  --color-surface: var(--color-dark-surface);
+  --color-primary: var(--color-dark-primary);
+  --color-border: var(--color-dark-border);
+
+
+   /* Skills Colors */
+  --color-skill-bg: var(--color-dark-skill-bg);
+  --color-skill-border: var(--color-dark-skill-border);
+  --color-skill-text: var(--color-dark-skill-text);
+  --color-skill-progress-bg: var(--color-dark-skill-progress-bg);
+  --color-skill-progress-fill: var(--color-dark-skill-progress-fill);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global style overrides */
+@layer base {
+
+  html,
+  body, #root {
+    @apply !overflow-x-hidden;
+    /* Disable horizontal scroll */
+
+    font-family: "Roboto", sans-serif;
+    /* Set global font */
+    line-height: 1.5;
+    /* Global line height */
+    font-weight: 400;
+    /* Global font weight */
+
+
+  }
+}
+
+html, body, #root {
+  overflow-x: hidden !important; /* strongest guarantee */
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/*  Animations */
+@keyframes streakAnim {
+  0% {
+    transform: scaleY(0);
+    opacity: 0.5;
+  }
+
+  90% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 0;
+  }
+}
+
+@keyframes glowAnim {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(280px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(280px);
+    opacity: 0;
+  }
+}
+
+/*  Enhanced Animations — More Shine, More Motion */
+@keyframes streakAnim {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+    filter: blur(1px);
+  }
+
+  50% {
+    opacity: 0.8;
+    filter: blur(2px) brightness(1.5);
+  }
+
+  90% {
+    transform: scaleY(1.05);
+    /* slight overshoot for energy */
+    opacity: 1;
+    filter: blur(3px) brightness(2);
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 0;
+    filter: blur(0);
+  }
+}
+
+@keyframes glowAnim {
+  0% {
+    transform: translateY(0) translateX(-50%) scale(0.9);
+    opacity: 0;
+    filter: brightness(1) blur(4px);
+  }
+
+  40% {
+    filter: brightness(2.2) blur(10px);
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateY(500px) translateX(-50%) scale(1.05);
+    /*  Increased to 500px */
+    filter: brightness(2.8) blur(14px);
+  }
+
+  100% {
+    transform: translateY(500px) translateX(-50%) scale(1);
+    /*  Matches end point */
+    opacity: 0;
+    filter: brightness(1) blur(4px);
+  }
+}
+
+/*  Vertical glowing bar — now with subtle inner glow */
+.line {
+  position: absolute;
+
+  width: 4px;
+  background: #0C0A00;
+  /* Add soft inner edge glow */
+  box-shadow:
+    inset 0 0 6px rgba(255, 255, 255, 0.2),
+    0 0 8px rgba(210, 189, 255, 0.4);
+}
+
+/*  Moving streak inside bar — brighter, smoother, more radiant */
+.streak {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 40%,
+      rgba(255, 255, 255, 0.8) 85%,
+      rgba(255, 255, 255, 1) 100%);
+  transform-origin: top;
+  animation: streakAnim 3s ease-out infinite;
+  /* faster, smoother */
+  filter: contrast(1.3);
+  /* makes whites pop more */
+}
+
+/*  SUPER GLOWING BLOCK — Brighter, Bigger, Blurrier, Shinier */
+.glow {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  /* slightly wider for more presence */
+  height: 32px;
+  /* slightly taller */
+  border-radius: 6px;
+  /* softer, more glow-friendly */
+  background: rgba(210, 189, 255, 1);
+  /* fully opaque core */
+  filter: blur(8px) brightness(1.8);
+  /* more bloom, more punch */
+
+  /* INSANE GLOW — layered, brighter, longer trails */
+  box-shadow:
+    0 0 30px 12px rgba(255, 220, 255, 0.9),
+    0 0 50px 20px rgba(210, 189, 255, 0.7),
+    0 -40px 40px 10px rgba(255, 255, 255, 0.6),
+    0 -80px 50px 8px rgba(200, 230, 255, 0.5),
+    0 -120px 60px 6px rgba(255, 200, 255, 0.4),
+    0 -160px 70px 4px rgba(255, 220, 200, 0.3);
+
+  /* Smoother, faster, more dramatic animation */
+  animation: glowAnim 2.5s ease-in-out infinite;
+}
+
+
+
+
+
+
+/*  Custom animations */
+ @keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* Utilities */
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out forwards;
+}
+
+.animate-fade-out {
+  animation: fade-out 0.3s ease-in forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Expose text variables globally for rich text only */
+:root {
+  --color-text-Quaternary: #252525; /* Light theme text color */
+  --color-text-Quinary: #333333;   /* Slightly lighter */
+}
+
+/* Override when dark mode is active */
+.dark {
+  --color-text-Quaternary: #E3E3E3; /* Dark theme text color */
+  --color-text-Quinary: #BFBFBF;    /* Slightly dimmer */
+}
+
+
+
+.rich-text p {
+  margin-bottom: 16px;
+}
+
+.rich-text h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--color-text-Quaternary);
+  margin: 32px 0;
+}
+
+.rich-text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-Quaternary);
+  margin: 24px 0;
+}
+
+.rich-text h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-Quinary);
+  margin: 20px 0;
+}
+
+.rich-text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-text-Quinary);
+  margin: 16px 0;
+}
+
+.rich-text h5 {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-text-Quinary);
+  margin: 12px 0;
+}
+
+.rich-text h6 {
+  font-size: 12px;
+  font-weight: 400;
+  color: #666666;
+  margin: 8px 0;
+}
+
+.rich-text strong {
+  font-weight: 700;
+}
+
+.rich-text ol {
+  margin-left: 30px;
+  list-style-type: decimal;
+}
+
+.rich-text ul {
+  margin-left: 30px;
+  list-style-type: disc;
+}
+
+.rich-text li {
+  margin-bottom: 8px;
+}
