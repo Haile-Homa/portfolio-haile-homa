@@ -412,6 +412,9 @@ html, body, #root {
 
 
 
+
+
+
 /* Expose text variables globally for rich text only */
 :root {
   --color-text-Quaternary: #252525; /* Light theme text color */

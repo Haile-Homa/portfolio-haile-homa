@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { motion } from "framer-motion"
 
 const PWAInstallPrompt = () => {
     const [deferredPrompt, setDeferredPrompt] = useState(null)
@@ -37,29 +38,36 @@ const PWAInstallPrompt = () => {
     if (!showPrompt) return null
 
     return (
-        <div className="fixed bottom-4 right-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700 max-w-sm">
-            <h3 className="font-semibold text-gray-900 dark:text-white mb-2">
+        <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: 200, opacity: 0 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            className="fixed bottom-3 right-4 p-4 rounded-2xl shadow-xl border border-white/30 backdrop-blur-xl bg-white/20 dark:bg-gray-900/40 max-w-sm text-gray-900 dark:text-gray-100"
+        >
+            <h3 className="font-semibold mb-2 drop-shadow-sm">
                 Install Portfolio App
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">
+            <p className="text-sm mb-3 opacity-90">
                 Install this app on your device for a better experience.
             </p>
             <div className="flex gap-2">
                 <button
                     onClick={installApp}
-                    className="flex-1 bg-[#25adec] text-white px-3 py-2 rounded text-sm font-medium hover:bg-[#29a8e3] transition-colors"
+                    className="flex-1 bg-[#25adec]/80 text-white px-3 py-2 rounded text-sm font-medium hover:bg-[#67bee6] transition-colors backdrop-blur-sm"
                 >
                     Install
                 </button>
                 <button
                     onClick={dismissPrompt}
-                    className="flex-1 bg-gray-300 dark:bg-gray-600 text-gray-700 dark:text-gray-300 px-3 py-2 rounded text-sm font-medium hover:bg-gray-400 dark:hover:bg-gray-500 transition-colors"
+                    className="flex-1 bg-white/40 dark:bg-gray-700/50 text-gray-900 dark:text-gray-100 px-3 py-2 rounded text-sm font-medium hover:bg-white/60 dark:hover:bg-gray-600 transition-colors backdrop-blur-sm"
                 >
                     Later
                 </button>
             </div>
-        </div>
+        </motion.div>
     )
+
 }
 
 export default PWAInstallPrompt
