@@ -6,29 +6,31 @@ const ThemeToggle = () => {
   const { isDark, toggleTheme } = useTheme();
 
   return (
-    <button
-      onClick={toggleTheme}
-      className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-border 
-                 bg-surface hover:bg-[#25adec] hover:text-white transition-all duration-300 
+    <div>
+      <button
+        onClick={toggleTheme}
+        className="flex items-center gap-2 w-ful px-18 md:px-4  py-2.5 md:py-2 rounded-2xl border border-slate-300
+               transition-all duration-300 
                  shadow-md hover:shadow-xl focus:outline-none focus:ring-2 
                  focus:ring-[#25adec]/70"
-      aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
-    >
-      {isDark ? (
-        //  Light Mode Icon
-        <div className="flex items-center gap-2 text-yellow-400">
-          <FaSun className="text-xl" />
-          <span className="text-sm font-medium  ">Light</span>
-        </div>
-      ) : (
+        aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+      >
+        {isDark ? (
+          //  Light Mode Icon
+          <div className="flex items-center gap-2 text-yellow-400  ">
+            <FaSun className="text-xl" />
+            <span className="text-sm font-medium  ">Light</span>
+          </div>
+        ) : (
 
-        // Dark Mode Icon
-        <div className="flex items-center gap-2 text-[#1bacef]">
-          <FaMoon className="text-xl" />
-          <span className="text-sm font-medium ">Dark</span>
-        </div>
-      )}
-    </button>
+          // Dark Mode Icon
+          <div className="flex items-center gap-2 text-[#1bacef]  ">
+            <FaMoon className="text-xl" />
+            <span className="text-sm font-medium ">Dark</span>
+          </div>
+        )}
+      </button>
+    </div>
   );
 };
 
@@ -49,7 +51,7 @@ export default ThemeToggle;
 
 // import React from 'react';
 // import { useTheme } from '../contexts/ThemeContext';
-// import { FaSun, FaMoon } from 'react-icons/fa'; 
+// import { FaSun, FaMoon } from 'react-icons/fa';
 
 // const ThemeToggle = () => {
 
