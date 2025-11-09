@@ -76,6 +76,11 @@ import mech10 from './mechanicali-img/mech-10.png';
 import mech11 from './mechanicali-img/mech-11.png';
 import mech12 from './mechanicali-img/mech-12.png';
 import mech13 from './mechanicali-img/mech-13.png';
+import mech14 from './mechanicali-img/mech-14.png';
+import mech15 from './mechanicali-img/mech-15.png';
+import mech16 from './mechanicali-img/mech-16.png';
+
+
 
 
 
@@ -162,8 +167,9 @@ const assets = {
     mech11,
     mech12,
     mech13,
-
-
+    mech14,
+    mech15,
+    mech16,
 
 
 

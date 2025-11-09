@@ -493,7 +493,7 @@ export const projects = [
     shortDescription: "3D modeling and assembly of engine parts in SolidWorks",
     description: "During my Mechanical Engineering studies at Bahir Dar University, I designed and modeled this engine project on my own. I created all parts, including the piston, piston pin, connecting rod, crankshaft, upper block, and lower block, and assembled them into a complete engine model. This project helped me practice important SolidWorks skills like sketching, extrusion, revolved features, cuts, chamfers, fillets, patterns, and assembly mates.",
     imageUrl: assets.engine_thumbnail,
-    videoUrl: "https://www.youtube.com/watch?v=FhguwBJeqWs&list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc",
+    videoUrl: "https://ia601409.us.archive.org/16/items/soldiworks/soldiworks.mp4",
     images: [
       assets.mech1,
       assets.mech2,
@@ -508,6 +508,9 @@ export const projects = [
       assets.mech11,
       assets.mech12,
       assets.mech13,
+      assets.mech14,
+      assets.mech15,
+      assets.mech16,
     ],
 
     status: "live",

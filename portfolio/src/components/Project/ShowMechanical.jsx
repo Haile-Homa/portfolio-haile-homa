@@ -6,7 +6,7 @@ const ShowMechanical = ({ project }) => {
   return (
     <div className="min-h-screen pt-20 pb-10 px-4">
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Header */}
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800 mb-4">
@@ -20,17 +20,16 @@ const ShowMechanical = ({ project }) => {
 
         {/* Media Section - Desktop Layout */}
         <div className="flex flex-col  gap-8 mb-8">
-          
+
           {/* Left Side - Video (Larger) */}
-          <div className="">
+          <div className="flex flex-col">
             {project.videoUrl && (
-              <div className="md:p-4 ">
+              <div className="md:p-4">
                 <div className="relative pt-[50%] bg-black rounded-lg overflow-hidden">
-                  <iframe
+                  <video
                     src={project.videoUrl}
                     className="absolute top-0 left-0 w-full h-full"
-                    frameBorder="0"
-                    allowFullScreen
+                    controls
                   />
                 </div>
                 <p className="text-center text-gray-600 mt-2">Project Video</p>
@@ -86,21 +85,19 @@ const ShowMechanical = ({ project }) => {
           <div className="flex border-b">
             <button
               onClick={() => setActiveTab("description")}
-              className={`flex-1 py-4 font-medium ${
-                activeTab === "description" 
-                  ? "text-cyan-500 border-b-2 border-cyan-400" 
-                  : "text-gray-600"
-              }`}
+              className={`flex-1 py-4 font-medium ${activeTab === "description"
+                ? "text-cyan-500 border-b-2 border-cyan-400"
+                : "text-gray-600"
+                }`}
             >
               Description
             </button>
             <button
               onClick={() => setActiveTab("features")}
-              className={`flex-1 py-4 font-medium ${
-                activeTab === "features" 
-                  ? "text-cyan-500 border-b-2 border-cyan-400" 
-                  : "text-gray-600"
-              }`}
+              className={`flex-1 py-4 font-medium ${activeTab === "features"
+                ? "text-cyan-500 border-b-2 border-cyan-400"
+                : "text-gray-600"
+                }`}
             >
               Features
             </button>
@@ -113,7 +110,7 @@ const ShowMechanical = ({ project }) => {
                 {project.richDescription ? (
                   <div
                     className="text-text-secondary leading-8 rich-text"
-                   dangerouslySetInnerHTML={{ __html: project.richDescription }} />
+                    dangerouslySetInnerHTML={{ __html: project.richDescription }} />
                 ) : (
                   <p className="text-gray-600 leading-relaxed">{project.description}</p>
                 )}
@@ -134,7 +131,7 @@ const ShowMechanical = ({ project }) => {
           </div>
         </div>
 
-        
+
       </div>
     </div>
   );
