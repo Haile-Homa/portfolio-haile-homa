@@ -47,7 +47,7 @@ const PWAInstallPrompt = () => {
             <div className="flex gap-2">
                 <button
                     onClick={installApp}
-                    className="flex-1 bg-[#44b6eb] text-white px-3 py-2 rounded text-sm font-medium hover:bg-[#29a8e3] transition-colors"
+                    className="flex-1 bg-[#25adec] text-white px-3 py-2 rounded text-sm font-medium hover:bg-[#29a8e3] transition-colors"
                 >
                     Install
                 </button>

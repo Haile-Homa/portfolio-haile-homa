@@ -50,7 +50,7 @@ export default defineConfig({
         name: 'Haile Portfolio',
         short_name: 'Portfolio',
         description: 'Personal portfolio showcasing projects and skills',
-        theme_color: '#3B82F6',
+        theme_color: '#374151',
         background_color: '#ffffff',
         display: 'standalone',
         start_url: '/',
