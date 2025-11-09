@@ -412,9 +412,6 @@ html, body, #root {
 
 
 
-
-
-
 /* Expose text variables globally for rich text only */
 :root {
   --color-text-Quaternary: #252525; /* Light theme text color */
@@ -428,6 +425,17 @@ html, body, #root {
 }
 
 
+
+
+
+
+
+
+
+
+.rich-text pre {
+  @apply overflow-x-auto whitespace-pre-wrap break-words;
+}
 
 .rich-text p {
   margin-bottom: 16px;
@@ -491,4 +499,68 @@ html, body, #root {
 
 .rich-text li {
   margin-bottom: 8px;
+}
+
+/*Table Styling — Modern, Column-Bar Design */
+.rich-text table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  overflow-x: auto;
+  display: block; /* Makes it scrollable on small screens */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+}
+
+/* Column bars instead of row lines */
+.rich-text th,
+.rich-text td {
+  padding: 12px 16px;
+  text-align: left;
+  border-right: 1px solid #e6e6e6; /* Column separator */
+  font-size: 15px;
+  color: var(--color-text-Quinary);
+}
+
+.rich-text th:last-child,
+.rich-text td:last-child {
+  border-right: none; /* Remove border from last column */
+}
+
+.rich-text th {
+  font-weight: 700;
+  color: var(--color-text-Quaternary);
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.rich-text tr:hover {
+  background-color: #f7f9fc;
+  transition: background 0.3s ease;
+}
+
+/*  Responsive Design */
+@media (max-width: 768px) {
+  .rich-text table {
+    font-size: 14px;
+  }
+
+  .rich-text th,
+  .rich-text td {
+    padding: 10px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rich-text table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .rich-text th,
+  .rich-text td {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
 }
