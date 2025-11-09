@@ -9,9 +9,9 @@ const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       className="flex items-center gap-2 px-4 py-1.5 rounded-full border border-border 
-                 bg-surface hover:bg-primary hover:text-white transition-all duration-300 
+                 bg-surface hover:bg-[#25adec] hover:text-white transition-all duration-300 
                  shadow-md hover:shadow-xl focus:outline-none focus:ring-2 
-                 focus:ring-primary/60"
+                 focus:ring-[#25adec]/70"
       aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
     >
       {isDark ? (
