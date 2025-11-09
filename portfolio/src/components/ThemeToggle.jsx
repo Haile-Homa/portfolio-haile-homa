@@ -9,7 +9,7 @@ const ThemeToggle = () => {
     <div>
       <button
         onClick={toggleTheme}
-        className="flex items-center gap-2 w-ful px-18 md:px-4  py-2.5 md:py-2 rounded-2xl border border-slate-300
+        className="flex items-center gap-2 w-ful px-18 md:px-4  py-2.5 md:py-1.5 rounded-2xl border border-slate-300
                transition-all duration-300 
                  shadow-md hover:shadow-xl focus:outline-none focus:ring-2 
                  focus:ring-[#25adec]/70"
