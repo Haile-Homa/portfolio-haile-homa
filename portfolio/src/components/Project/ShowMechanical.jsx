@@ -50,7 +50,7 @@ const ShowMechanical = ({ project }) => {
                       key={index}
                       src={image}
                       alt={`${project.name} ${index + 1}`}
-                      className="w-full h-48 object-cover rounded-lg"
+                      className="w-full h-auto object-cover rounded-lg"
                     />
                   ))}
                 </div>

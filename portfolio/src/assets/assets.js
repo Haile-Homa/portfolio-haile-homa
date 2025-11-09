@@ -62,7 +62,20 @@ import limitlesschat_thumbnail from "./projectimg/limitlesschat.png"
 import solidworks from "./icons/solidworks.png"
 
 
-solidworks
+// mechanical images
+import mech1 from './mechanicali-img/mech-1.png';
+import mech2 from './mechanicali-img/mech-2.png';
+import mech3 from './mechanicali-img/mech-3.png';
+import mech4 from './mechanicali-img/mech-4.png';
+import mech5 from './mechanicali-img/mech-5.png';
+import mech6 from './mechanicali-img/mech-6.png';
+import mech7 from './mechanicali-img/mech-7.png';
+import mech8 from './mechanicali-img/mech-8.png';
+import mech9 from './mechanicali-img/mech-9.png';
+import mech10 from './mechanicali-img/mech-10.png';
+import mech11 from './mechanicali-img/mech-11.png';
+import mech12 from './mechanicali-img/mech-12.png';
+import mech13 from './mechanicali-img/mech-13.png';
 
 
 
@@ -135,7 +148,23 @@ const assets = {
     solidworks,
 
 
-    
+    // mechanical images and drawings
+    mech1,
+    mech2,
+    mech3,
+    mech4,
+    mech5,
+    mech6,
+    mech7,
+    mech8,
+    mech9,
+    mech10,
+    mech11,
+    mech12,
+    mech13,
+
+
+
 
 
 }

@@ -495,16 +495,21 @@ export const projects = [
     imageUrl: assets.engine_thumbnail,
     videoUrl: "https://www.youtube.com/watch?v=FhguwBJeqWs&list=PL4cUxeGkcC9haFPT7J25Q9GRB_ZkFrQAc",
     images: [
-      assets.blog11,
-      assets.blog12,
-      assets.blog13,
-      assets.blog13,
-      assets.blog13,
-      assets.blog13,
-
-
-
+      assets.mech1,
+      assets.mech2,
+      assets.mech3,
+      assets.mech4,
+      assets.mech5,
+      assets.mech6,
+      assets.mech7,
+      assets.mech8,
+      assets.mech9,
+      assets.mech10,
+      assets.mech11,
+      assets.mech12,
+      assets.mech13,
     ],
+
     status: "live",
     technologies: [
       { name: "SolidWorks", icon: assets.solidworks, color: "#D66224" }

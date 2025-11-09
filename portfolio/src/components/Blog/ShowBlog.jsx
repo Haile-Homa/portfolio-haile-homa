@@ -229,10 +229,7 @@ const ShowBlog = ({ blogs }) => {
                         <span className="text-text-secondary text-sm">Category</span>
                         <span className="text-accent-primary font-medium text-sm">{blog.topic}</span>
                       </div>
-                      <div className="flex justify-between items-center py-2">
-                        <span className="text-text-secondary text-sm">Difficulty</span>
-                        <span className="text-cyan-500 font-medium text-sm">Intermediate</span>
-                      </div>
+                  
                     </div>
                   </div>
 
@@ -240,7 +237,7 @@ const ShowBlog = ({ blogs }) => {
                   {/* Action Buttons */}
                   <div className="rounded-2xl border border-slate-300 transition-all duration-700 ease-out hover:shadow-lg hover:scale-[1.02] p-5">
                     <h4 className="text-text-primary font-semibold mb-4 text-lg">
-                       Share this article
+                      Share this article
                     </h4>
 
                     <div className="grid grid-cols-2 gap-3">
