@@ -8,8 +8,8 @@ const ShowMechanical = ({ project }) => {
       <div className="max-w-6xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-text-primary mb-4">
+        <div className=" mb-8">
+          <h1 className="text-center text-3xl font-bold text-text-primary mb-4">
             {project.name}
           </h1>
           <p className="text-lg text-text-secondary">
