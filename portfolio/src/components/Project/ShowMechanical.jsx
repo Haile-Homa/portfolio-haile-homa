@@ -9,10 +9,10 @@ const ShowMechanical = ({ project }) => {
 
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800 mb-4">
+          <h1 className="text-3xl font-bold text-text-primary mb-4">
             {project.name}
           </h1>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-text-secondary">
             {project.description}
           </p>
         </div>
@@ -32,7 +32,7 @@ const ShowMechanical = ({ project }) => {
                     controls
                   />
                 </div>
-                <p className="text-center text-gray-600 mt-2">Project Video</p>
+                <p className="text-center text-text-secondary mt-2">Project Video</p>
               </div>
             )}
           </div>
@@ -42,7 +42,7 @@ const ShowMechanical = ({ project }) => {
           <div className="w-full">
             {project.images && project.images.length > 0 && (
               <div className=" p-4">
-                <h3 className="text-xl font-bold text-gray-800 mb-4">Project Images</h3>
+                <h3 className="text-xl font-bold text-text-primary mb-4">Project Images</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                   {project.images.map((image, index) => (
                     <img
@@ -61,7 +61,7 @@ const ShowMechanical = ({ project }) => {
         {/* Technologies Section */}
         {project.technologies && (
           <div className=" border border-slate-300 rounded-2xl p-6 mb-8">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Technologies Used</h3>
+            <h3 className="text-xl font-bold text-text-primary mb-4">Technologies Used</h3>
             <div className="flex flex-wrap gap-4">
               {project.technologies.map((tech, i) => (
                 <div
@@ -73,7 +73,7 @@ const ShowMechanical = ({ project }) => {
                     alt={tech.name}
                     className="w-6 h-6"
                   />
-                  <span className="text-gray-700 font-medium">{tech.name}</span>
+                  <span className="text-text-secondary font-medium">{tech.name}</span>
                 </div>
               ))}
             </div>
@@ -87,7 +87,7 @@ const ShowMechanical = ({ project }) => {
               onClick={() => setActiveTab("description")}
               className={`flex-1 py-4 font-medium ${activeTab === "description"
                 ? "text-cyan-500 border-b-2 border-cyan-400"
-                : "text-gray-600"
+                : "text-text-secondary"
                 }`}
             >
               Description
@@ -96,7 +96,7 @@ const ShowMechanical = ({ project }) => {
               onClick={() => setActiveTab("features")}
               className={`flex-1 py-4 font-medium ${activeTab === "features"
                 ? "text-cyan-500 border-b-2 border-cyan-400"
-                : "text-gray-600"
+                : "text-text-secondary"
                 }`}
             >
               Features
@@ -123,7 +123,7 @@ const ShowMechanical = ({ project }) => {
                 {project.features.map((feature, index) => (
                   <div key={index} className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-cyan-600 rounded-full mt-2"></div>
-                    <span className="text-gray-700">{feature}</span>
+                    <span className="text-text-secondary">{feature}</span>
                   </div>
                 ))}
               </div>

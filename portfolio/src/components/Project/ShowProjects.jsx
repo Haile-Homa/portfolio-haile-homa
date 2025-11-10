@@ -89,7 +89,7 @@ const ShowProjects = ({ projects }) => {
                     style={{ borderColor: `${tech.color}40` }}
                   >
                     <div
-                      className="flex justify-center items-center h-12"
+                      className="flex justify-center items-center h-14"
                       style={{ backgroundColor: `${tech.color}20` }}
                     >
                       <img

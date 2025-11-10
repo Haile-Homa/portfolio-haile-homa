@@ -25,7 +25,7 @@ export const projects = [
       },
       {
         name: "Google Generative AI (Gemini)",
-        icon: "https://cdn.jsdelivr.net/npm/simple-icons@v10/icons/google.svg",
+        icon: assets.geminiicon,
         color: "#EA4335",
       },
       {
@@ -58,6 +58,11 @@ export const projects = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
         color: "#68A063",
       },
+      {
+        name: "balabalha...",
+        icon: assets.etc,
+        color: "#0762f2",
+      },
     ],
     features: [
       "Command history and auto-scroll for realistic terminal interactions",
@@ -86,24 +91,24 @@ export const projects = [
         color: "#61DAFB",
       },
       {
-        name: "TensorFlow.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
-        color: "#FF6F00",
-      },
-      {
         name: "Firebase",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
         color: "#FFCA28",
       },
       {
         name: "Recharts",
-        icon: "https://raw.githubusercontent.com/recharts/recharts-site/master/public/assets/img/logo.png",
+        icon: assets.reactChart,
         color: "#FF4C4C",
       },
       {
         name: "React Leaflet",
         icon: "https://raw.githubusercontent.com/Leaflet/Leaflet/main/src/images/logo.svg",
         color: "#4A90E2",
+      },
+      {
+        name: "TensorFlow.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+        color: "#FF6F00",
       },
       {
         name: "Vite",
@@ -119,6 +124,11 @@ export const projects = [
         name: "Express.js",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
         color: "#2986cc",
+      },
+      {
+        name: "balabalha...",
+        icon: assets.etc,
+        color: "#0762f2",
       },
     ],
     features: [
@@ -156,12 +166,12 @@ export const projects = [
       },
       {
         name: "Framer Motion",
-        icon: "https://raw.githubusercontent.com/framer/motion/main/.github/assets/icon.png",
+        icon: assets.framermotion,
         color: "#0055FF",
       },
       {
         name: "React Router DOM",
-        icon: "https://raw.githubusercontent.com/remix-run/react-router/main/docs/_assets/react-router-mark-color.svg",
+        icon: assets.reactrouter,
         color: "#CA4245",
       },
       {
@@ -171,8 +181,13 @@ export const projects = [
       },
       {
         name: "EmailJS",
-        icon: "https://www.emailjs.com/favicon.png",
+        icon: assets.emailjs,
         color: "#FF6A00",
+      },
+      {
+        name: "balabalha...",
+        icon: assets.etc,
+        color: "#0762f2",
       },
     ],
     features: [
@@ -217,7 +232,7 @@ export const projects = [
       },
       {
         name: "OpenAI API",
-        icon: "https://seeklogo.com/images/O/openai-logo-8B9BFEDC26-seeklogo.com.svg",
+        icon: assets.openai,
         color: "#4CAF50",
       },
       {
@@ -232,18 +247,23 @@ export const projects = [
       },
       {
         name: "Axios",
-        icon: "https://raw.githubusercontent.com/axios/axios/master/assets/logo.svg",
+        icon: assets.axios,
         color: "#5A29E4",
       },
       {
         name: "React Router",
-        icon: "https://raw.githubusercontent.com/remix-run/react-router/main/docs/_assets/react-router-mark-color.svg",
+        icon: assets.reactrouter,
         color: "#CA4245",
       },
       {
         name: "React Hot Toast",
-        icon: "https://raw.githubusercontent.com/timolins/react-hot-toast/main/logo.svg",
+        icon: assets.reactHotToast,
         color: "#FFB800",
+      },
+      {
+        name: "balabalha...",
+        icon: assets.etc,
+        color: "#0762f2",
       },
     ],
     features: [
@@ -292,33 +312,38 @@ export const projects = [
       },
       {
         name: "Axios",
-        icon: "https://raw.githubusercontent.com/axios/axios/master/assets/logo.svg",
+        icon: assets.axios,
         color: "#5A29E4",
       },
       {
         name: "Quill Editor",
-        icon: "https://cdn.quilljs.com/1.3.6/quill.snow.css", // Quill has no official icon; this is a placeholder
-        color: "#F3F3F3",
+        icon: assets.quilleditor,
+        color: "#00D7DF",
       },
       {
         name: "React Router",
-        icon: "https://raw.githubusercontent.com/remix-run/react-router/main/docs/_assets/react-router-mark-color.svg",
+        icon: assets.reactrouter,
         color: "#CA4245",
       },
       {
         name: "React Toastify",
-        icon: "https://raw.githubusercontent.com/fkhadra/react-toastify/main/logo/logo.png",
+        icon: assets.reactHotToast,
         color: "#FFB800",
       },
       {
         name: "Stripe",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/stripe/stripe-original.svg",
+        icon: assets.stripe,
         color: "#635BFF",
       },
       {
         name: "React-YouTube",
-        icon: "https://raw.githubusercontent.com/cookpete/react-player/master/demo/youtube.png",
+        icon: assets.reactIcon,
         color: "#FF0000",
+      },
+      {
+        name: "balabalha...",
+        icon: assets.etc,
+        color: "#0762f2",
       },
     ],
     features: [
@@ -351,7 +376,7 @@ export const projects = [
       },
       {
         name: "React Router",
-        icon: "https://raw.githubusercontent.com/remix-run/react-router/main/docs/_assets/react-router-mark-color.svg",
+        icon: assets.reactrouter,
         color: "#CA4245",
       },
       {
@@ -361,28 +386,33 @@ export const projects = [
       },
       {
         name: "React Toastify",
-        icon: "https://raw.githubusercontent.com/fkhadra/react-toastify/main/logo/logo.png",
+        icon: assets.reactHotToast,
         color: "#FFB800",
       },
       {
         name: "Lucide React Icons",
-        icon: "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/react.svg",
+        icon: assets.lucideReactIcon,
         color: "#000000",
       },
       {
         name: "Swiper",
-        icon: "https://raw.githubusercontent.com/nolimits4web/swiper/main/package/img/logo.svg",
+        icon: assets.swiper,
         color: "#007AFF",
       },
-      {
-        name: "React-PDF-Viewer",
-        icon: "https://raw.githubusercontent.com/react-pdf-viewer/react-pdf-viewer/main/packages/core/logo.svg",
-        color: "#E74C3C",
-      },
+      // {
+      //   name: "React-PDF-Viewer",
+      //   icon: "https://raw.githubusercontent.com/react-pdf-viewer/react-pdf-viewer/main/packages/core/logo.svg",
+      //   color: "#E74C3C",
+      // },
       {
         name: "Vite",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg",
         color: "#646CFF",
+      },
+      {
+        name: "balabalha...",
+        icon: assets.etc,
+        color: "#0762f2",
       },
     ],
     features: [
@@ -419,6 +449,11 @@ export const projects = [
         name: "Android Studio",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
         color: "#3DDC84",
+      },
+      {
+        name: "balabalha...",
+        icon: assets.etc,
+        color: "#0762f2",
       },
     ],
     features: [
@@ -460,6 +495,11 @@ export const projects = [
         name: "Figma",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
         color: "#F24E1E",
+      },
+      {
+        name: "balabalha...",
+        icon: assets.etc,
+        color: "#0762f2",
       },
     ],
     features: [

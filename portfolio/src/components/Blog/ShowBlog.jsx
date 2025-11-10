@@ -85,7 +85,7 @@ const ShowBlog = ({ blogs }) => {
       <div className="max-w-7xl mx-auto px-4 mt-15 md:mt-0">
         <div className="flex justify-center">
 
-          <div className="w-full max-w-[90%]">
+          <div className="w-full max-w-[98%] md:max-w-[90%]">
 
             {/* Header Section */}
             <header className="mb-8 text-center">
@@ -229,7 +229,7 @@ const ShowBlog = ({ blogs }) => {
                         <span className="text-text-secondary text-sm">Category</span>
                         <span className="text-accent-primary font-medium text-sm">{blog.topic}</span>
                       </div>
-                  
+
                     </div>
                   </div>
 

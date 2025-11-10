@@ -1,5 +1,3 @@
-
-
 import machine_icon from './images/machine-icon.png'
 import Service_icon from './images/Service-icon.png'
 import communication_icon from './images/communication_icon.png'
@@ -82,7 +80,21 @@ import mech16 from './mechanicali-img/mech-16.png';
 
 
 
-
+import reactChart from './tech-icons/react-chart.svg';
+import markdownIcon from './tech-icons/markdown-svgrepo-com.svg';
+import reactIcon from './tech-icons/react.svg';
+import etc from './tech-icons/etc.png';
+import geminiicon from './tech-icons/Google-gemini.png';
+import framermotion from './tech-icons/framer-motion.webp';
+import reactrouter from './tech-icons/react-router.svg';
+import emailjs from './tech-icons/emailjs.jpeg';
+import openai from './tech-icons/openai.svg';
+import axios from './tech-icons/Azios.svg';
+import reactHotToast from './tech-icons/react-hot-toast.png';
+import quilleditor from './tech-icons/quill-editor.svg';
+import stripe from './tech-icons/stripe.svg';
+import lucideReactIcon from './tech-icons/lucide-react-icon.png';
+import swiper from './tech-icons/swiperjs.png';
 
 
 
@@ -170,6 +182,26 @@ const assets = {
     mech14,
     mech15,
     mech16,
+
+
+    /* tech icons */
+    reactChart,
+    markdownIcon,
+    reactIcon,
+    geminiicon,
+    framermotion,
+    reactrouter,
+    emailjs,
+    openai,
+    axios,
+    reactHotToast,
+    quilleditor,
+    stripe,
+    lucideReactIcon,
+    swiper,
+    etc,
+
+
 
 
 

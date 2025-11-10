@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { FaBars, FaTimes, FaHome, FaUser, FaCode, FaProjectDiagram, FaBlog, FaEnvelope } from "react-icons/fa";
+import { FaBars, FaTimes, FaHome, FaUser, FaCode, FaProjectDiagram, FaBlog, FaEnvelope, FaTools } from "react-icons/fa";
 import ThemeToggle from "../ThemeToggle";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -28,6 +28,7 @@ function Navbar() {
     { id: "about", label: "About Me", icon: <FaUser />, type: "scroll" },
     { id: "skills", label: "Skills", icon: <FaCode />, type: "scroll" },
     { id: "projects", label: "Projects", icon: <FaProjectDiagram />, type: "scroll" },
+    { id: "services", label: "Services", icon: <FaTools />, type: "scroll" },
     { id: "blog", label: "Blog", icon: <FaBlog />, type: "scroll" },
     { id: "contacts", label: "Contact", icon: <FaEnvelope />, type: "scroll" },
   ];
@@ -36,16 +37,16 @@ function Navbar() {
 
 
   //  handle logo click (go back)
-const handleHomeClick = () => {
-  if (location.pathname === "/") {
-    const homeElement = document.getElementById("home");
-    if (homeElement) {
-      homeElement.scrollIntoView({ behavior: "smooth" });
+  const handleHomeClick = () => {
+    if (location.pathname === "/") {
+      const homeElement = document.getElementById("home");
+      if (homeElement) {
+        homeElement.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate("/");
     }
-  } else {
-    navigate("/");
-  }
-};
+  };
 
   return (
     <nav className="
@@ -64,34 +65,34 @@ const handleHomeClick = () => {
       </div>
 
       {/* Desktop Links */}
-<div className="hidden lg:flex gap-6 mr-10">
-  {navLinks.map(({ id, label, type }) =>
-    type === "route" ? (
-      <span
-        key={id}
-        onClick={handleHomeClick}
-        className="cursor-pointer hover:text-blue-400 flex items-center gap-2"
-      >
-        {label}
-      </span>
-    ) : (
-      <Link
-        key={id}
-        to={id}
-        smooth={true}
-        duration={900}
-        offset={-70}
-        spy={true}
-        activeClass="text-[#78D3FD] font-bold border-b-2 border-[#78D3FD]"
-        className="cursor-pointer hover:text-blue-400 flex items-center gap-2"
-      >
-        {label}
-      </Link>
-    )
-  )}
+      <div className="hidden lg:flex gap-6 mr-10">
+        {navLinks.map(({ id, label, type }) =>
+          type === "route" ? (
+            <span
+              key={id}
+              onClick={handleHomeClick}
+              className="cursor-pointer hover:text-blue-400 flex items-center gap-2"
+            >
+              {label}
+            </span>
+          ) : (
+            <Link
+              key={id}
+              to={id}
+              smooth={true}
+              duration={900}
+              offset={-70}
+              spy={true}
+              activeClass="text-[#78D3FD] font-bold border-b-2 border-[#78D3FD]"
+              className="cursor-pointer hover:text-blue-400 flex items-center gap-2"
+            >
+              {label}
+            </Link>
+          )
+        )}
 
-  <ThemeToggle />
-</div>
+        <ThemeToggle />
+      </div>
 
 
 

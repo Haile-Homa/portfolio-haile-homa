@@ -7,6 +7,7 @@ import Blogs from './pages/Blogs.jsx';
 import Contacts from './pages/Contact.jsx';
 import Footer from './components/layout/Footer';
 import Navbar from './components/layout/Navbar.jsx';
+import Services from './pages/Services.jsx';
 
 import Home from './pages/Home.jsx';
 import ShowProjects from "./components/Project/ShowProjects.jsx";
@@ -34,8 +35,10 @@ const App = () => {
               <section id="about"><AboutMe /></section>
               <section id="skills"><Skills /></section>
               <section id="projects"><Projects /></section>
+              <section id="services"><Services/></section>
               <section id="blog"><Blogs /></section>
               <section id="contacts"><Contacts /></section>  
+
              
             </>
           } />
