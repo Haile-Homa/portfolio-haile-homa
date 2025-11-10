@@ -1,18 +1,6 @@
-import { motion } from "framer-motion";
-
-import Navbar from '../components/layout/Navbar';
 import Hero from '../components/Hero';
-import profihail from '../assets/images/bgprof.png';
-import dark_prfihail from '../assets/images/dark-bgprof.png';
-
-import { useAnimations } from "../contexts/AnimationContext";
-import { useTheme } from "../contexts/ThemeContext";
 
 const Home = () => {
-
-  const { fadeInRight } = useAnimations();
-  const { isDark } = useTheme();
-
 
   return (
     <>
@@ -25,8 +13,6 @@ const Home = () => {
             <Hero />
           </div>
         </div>
-
-
 
       </div>
 

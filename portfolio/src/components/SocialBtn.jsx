@@ -15,7 +15,7 @@ function SocialBtn({ exclude = [] }) {
     { name: "Email", type: "img", src: assets.email_svg, url: "mailto:hailehoma1@gmail.com" },
     { name: "medium", type: "img", src: assets.mediumicon, url: "https://medium.com/@hailehoma1" },
     { name: "dev.to", type: "img", src: assets.devtoicon, url: "https://dev.to/haile_homa_12" },
-    { name: "WhatsApp", type: "img", src: assets.whatsapp, url: "https://wa.me/251935636651", },
+    { name: "WhatsApp", type: "img", src: assets.whatsapp, url: "https://wa.me/+251935636651", },
     { name: "Discord", type: "img", src: assets. discord, url: "https://discord.com/users/1360025004833509486" },
 
   ];

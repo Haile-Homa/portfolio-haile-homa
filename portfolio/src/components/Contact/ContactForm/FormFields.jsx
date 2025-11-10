@@ -4,7 +4,7 @@ import { useAnimations } from "../../../contexts/AnimationContext";
 
 const FormFields = () => {
 
-  const { fadeIn, fadeInLeft, fadeInRight, fadeInUp, fadeInDown } = useAnimations();
+  const { fadeInLeft, fadeInRight} = useAnimations();
 
 
   return (

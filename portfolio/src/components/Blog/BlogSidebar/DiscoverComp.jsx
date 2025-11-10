@@ -1,9 +1,17 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import { useAnimations } from "../../../contexts/AnimationContext";
 
 const DiscoverComp = ({ discover }) => {
 
     const { fadeInRight } = useAnimations();
+    
+  const navigate = useNavigate();
+
+  const goToProjects = () => {
+    navigate("/", { state: { scrollTo: "projects" } });
+  };
+
 
     return (
         <motion.div
@@ -22,6 +30,7 @@ const DiscoverComp = ({ discover }) => {
                 <div className="flex flex-col sm:flex-row gap-3">
 
                     <button
+                    onClick={goToProjects}
                         type="submit"
                         className="px-5 py-2 bg-blue-300 text-black rounded-lg hover:bg-blue-400 transition-colors duration-200"
                     >

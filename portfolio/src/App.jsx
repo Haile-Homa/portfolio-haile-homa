@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useRef } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import AboutMe from './pages/AboutMe.jsx';
 import Skills from './pages/Skills.jsx';
@@ -22,6 +22,15 @@ import PWAInstallPrompt from './components/PWAInstallPrompt'
 
 const App = () => {
 
+    const projectsRef = useRef(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo === "projects") {
+      projectsRef.current?.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [location.state]);
+
   return (
       <>
     <div className="flex flex-col min-h-screen bg-bg-primary text-text-primary">
@@ -34,7 +43,7 @@ const App = () => {
               <section id="home"><Home/></section>
               <section id="about"><AboutMe /></section>
               <section id="skills"><Skills /></section>
-              <section id="projects"><Projects /></section>
+              <section ref={projectsRef} id="projects"><Projects /></section>
               <section id="services"><Services/></section>
               <section id="blog"><Blogs /></section>
               <section id="contacts"><Contacts /></section>  

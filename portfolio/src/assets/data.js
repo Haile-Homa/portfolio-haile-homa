@@ -149,7 +149,7 @@ export const projects = [
   },
   {
     id: "portfolio-gui",
-    name: "Portfolio Website (GUI)",
+    name: "Portfolio Website (GUI)-PWA",
     description: "This is my personal portfolio website built with React 19 and Tailwind CSS. It showcases my projects, skills, blogs, and contact information in a clean, modern, and interactive interface. The site features smooth animations using Framer Motion, animated skill bars with React Circular Progressbar, and dynamic routing for project and blog pages. It is fully responsive, works on all devices, and gives visitors an easy and engaging way to explore my work. Alongside this GUI version, I also have a terminal-style portfolio, which is another way I share my projects and skills.",
     imageUrl: assets.gui_thumbnail, // replace with your GUI portfolio image
     status: "live",
@@ -531,7 +531,7 @@ export const projects = [
     name: "Engine Assembly (SolidWorks)",
     type: "mechanical",
     shortDescription: "3D modeling and assembly of engine parts in SolidWorks",
-    description: "During my Mechanical Engineering studies at Bahir Dar University, I designed and modeled this engine project on my own. I created all parts, including the piston, piston pin, connecting rod, crankshaft, upper block, and lower block, and assembled them into a complete engine model. This project helped me practice important SolidWorks skills like sketching, extrusion, revolved features, cuts, chamfers, fillets, patterns, and assembly mates.",
+    description: "During my Mechanical Engineering studies at Bahir Dar University, I designed and modeled this engine project on my own. I created all parts, including the piston, piston pin, connecting rod, crankshaft, upper block, and lower block, and assembled them into a half-cut engine model. This project helped me practice important SolidWorks skills like sketching, extrusion, revolved features, cuts, chamfers, fillets, patterns, and assembly mates.",
     imageUrl: assets.engine_thumbnail,
     videoUrl: "https://ia601409.us.archive.org/16/items/soldiworks/soldiworks.mp4",
     images: [
@@ -558,15 +558,20 @@ export const projects = [
       { name: "SolidWorks", icon: assets.solidworks, color: "#D66224" }
     ],
     features: [
-      "Modeled individual engine parts from scratch",
-      "Applied features like Extrude, Revolve, Cut, Chamfer, Fillet, Linear Pattern",
-      "Assembled all parts using mates and copy-mate techniques",
-      "Created simple animations and set appearances for visualization",
-      "Independent project completed during my university studies"
+      "Modeled all main engine components from scratch ",
+      "Designed precise parts like piston, crankshaft, and connecting rod ",
+      "Used Extrude, Revolve, Fillet, and Cut features for shaping ",
+      "Applied mates to assemble parts with correct motion ",
+      "Created a half-cut engine model for better internal view ",
+      "Added simple motion simulation to show rotation and movement ",
+      "Practiced section views and exploded assembly views ",
+      "Ensured dimensional accuracy and smooth fitting of parts ",
+      "Learned real-world engine mechanism and assembly workflow ",
+      "Practiced section views ",
     ],
     richDescription: `
   <h2>Project Overview</h2>
-  <p>This engine assembly project was completed independently during my Mechanical Engineering studies at Bahir Dar University. I designed and modeled all engine parts and assembled them into a complete engine model.</p>
+  <p>This engine assembly project was completed independently during my Mechanical Engineering studies at Bahir Dar University. I designed and modeled all engine parts and assembled them into a half-cut engine model.</p>
 
   <h3>Design and Modeling</h3>
   <ul>
@@ -603,7 +608,7 @@ export const projects = [
 // data.js
 export const blogPosts = [
   {
-    id: "1",
+    "id": "64fc2a1e9b3f4d0012345670",
     thumbnailBlog: assets.blog1,
     image: assets.blog1,
     alt: "A diagram explaining how a CDN works with an origin server, CDN servers, and users.",
@@ -688,7 +693,7 @@ export const blogPosts = [
 
 
   {
-    id: "2",
+    "id": "64fc2a1e9b3f4d0012345671",
     thumbnailBlog: assets.blog2,
     image: assets.blog2,
     alt: "An illustration representing GitHub Actions workflows and automation.",
@@ -784,7 +789,7 @@ jobs:
 
 
   {
-    id: "3",
+    "id": "64fc2a1e9b3f4d0012345672",
     thumbnailBlog: assets.blog3,
     image: assets.blog3,
     alt: "A diagram illustrating the core concepts of a Progressive Web App (PWA) leading to an 'Installed' state.",
@@ -850,7 +855,7 @@ jobs:
 
 
   {
-    id: "4",
+   "id": "64fc2a1e9b3f4d0012345673",
     thumbnailBlog: assets.blog4,
     image: assets.blog4,
     alt: "A diagram showing the relationship between a Dockerfile, Docker Image, and Docker Container.",
@@ -948,7 +953,7 @@ jobs:
 
 
   {
-    id: "5",
+    "id": "64fc2a1e9b3f4d0012345674",
     thumbnailBlog: assets.blog5_thumbnail,
     image: assets.blog5,
     alt: "CI/CD Pipeline workflow diagram showing automated stages from code commit to production deployment",
@@ -1112,7 +1117,7 @@ jobs:
 
 
   {
-    id: "6",
+    "id": "64fc2a1e9b3f4d0012345675",
     thumbnailBlog: assets.blog6,
     image: assets.blog6,
     alt: "Terminal showing MongoDB Atlas connection errors including queryTxt ETIMEOUT and querySrv ENOTFOUND",
@@ -1250,7 +1255,7 @@ module.exports = connectDB;
 
 
   {
-    id: "7",
+    "id": "64fc2a1e9b3f4d0012345676",
     thumbnailBlog: assets.blog7,
     image: assets.blog7,
     alt: "A diagram illustrating HTTP methods GET, POST, PUT, DELETE for client-server communication.",
@@ -1384,7 +1389,7 @@ module.exports = connectDB;
 
 
   {
-    id: "8",
+    "id": "64fc2a1e9b3f4d0012345677",
     thumbnailBlog: assets.blog8,
     image: assets.blog8,
     alt: "Web Performance optimization diagram showing key metrics and improvement strategies",
@@ -1574,7 +1579,7 @@ module.exports = connectDB;
   },
 
   {
-    id: "9",
+    "id": "64fc2a1e9b3f4d0012345678",
     thumbnailBlog: assets.blog9,
     image: assets.blog9,
     alt: "VS Code editor showing 'Unknown at rule @tailwind css(unknownAtRules)' error",
@@ -1699,7 +1704,7 @@ module.exports = connectDB;
 
   ,
   // {
-  //   id: "10",
+  //   "id": "64fc2a1e9b3f4d0012345679",
   //   image: assets.blog10,
   //   alt: "How to connect a React frontend with a NodeJS/Express backend",
   //   topic: "Database",
@@ -1741,21 +1746,22 @@ module.exports = connectDB;
 
 /* Aside data */
 export const topics = [
-  { name: "Database", iconimage: assets.nodejsicon, link: "#" },
+  { name: "back-end", iconimage: assets.nodejsicon, link: "#" },
   { name: "Accessibility", iconimage: assets.jsicon, link: "#" },
   { name: "Web Performance", iconimage: assets.reacticon, link: "#" },
 ];
 
 export const tags = [
-  "#mongodb", "#nodejs", "#a11y", "#mobility", "#inclusion", "#webperf", "#optimize", "#performance"
+  "#github actions", "#nodejs", "#tailwindcss", "#ci/cd", "#PWA", "#webperf", "#optimize", "#performance"
 ];
 
 export const contact = {
   text: "Interested in working together or teaming up on a project? let’s bring it to life.",
   socialLinks: [
-    { platform: "discord", icon: assets.linkedin_svg, url: "#" },
-    { platform: "twitter", icon: assets.telegram_svg, url: "#" },
-    { platform: "facebook", icon: assets.email_svg, url: "#" },
+    { platform: "linkedin", icon: assets.linkedin_svg, url: "https://www.linkedin.com/in/haile-homa-632344336/" },
+    { platform: "telegram", icon: assets.telegram_svg, url: "https://t.me/haile_dev" },
+    { platform: "email", icon: assets.email_svg, url:  "mailto:hailehoma1@gmail.com" },
+    { platform: "WhatsApp", icon: assets.whatsapp, url: "https://wa.me/+251935636651" },
   ],
 };
 

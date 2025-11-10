@@ -43,7 +43,7 @@ const PWAInstallPrompt = () => {
             animate={{ x: 0, opacity: 1 }}
             exit={{ x: 200, opacity: 0 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="fixed bottom-3 right-4 p-4 rounded-2xl shadow-xl border border-white/30 backdrop-blur-xl bg-white/20 dark:bg-gray-900/40 max-w-sm text-gray-900 dark:text-gray-100"
+            className="fixed bottom-3 right-4 p-4 rounded-2xl shadow-xl border border-white/30 backdrop-blur-xl bg-white/20 dark:bg-gray-900/40 max-w-sm text-gray-900 dark:text-gray-100 z-50"
         >
             <h3 className="font-semibold mb-2 drop-shadow-sm">
                 Install Portfolio App

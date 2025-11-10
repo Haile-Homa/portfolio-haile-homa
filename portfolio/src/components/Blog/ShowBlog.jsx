@@ -1,8 +1,8 @@
 // ShowBlog.jsx
 import React, { useEffect } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, useNavigate  } from "react-router-dom";
 import { HiCalendar, HiClock, HiTag, HiUser, HiShare, HiBookmark } from "react-icons/hi";
-import { blogPosts, topics, tags, contact, discover } from "../../assets/data";
+import { contact, discover } from "../../assets/data";
 import Prism from "prismjs";
 
 // Import Prism.js theme and languages
@@ -17,6 +17,8 @@ import "prismjs/components/prism-bash";
 import "prismjs/components/prism-yaml";
 
 const ShowBlog = ({ blogs }) => {
+
+
   const location = useLocation();
   const { blogId } = useParams();
   const blog = blogs?.find(post => post.id === blogId);
@@ -59,6 +61,13 @@ const ShowBlog = ({ blogs }) => {
       month: 'long',
       day: 'numeric'
     });
+
+
+  const navigate = useNavigate();
+
+  const goToProjects = () => {
+    navigate("/", { state: { scrollTo: "projects" } });
+  };
 
   // Handle image error
   const handleImageError = (e, fallbackText) => {
@@ -174,6 +183,9 @@ const ShowBlog = ({ blogs }) => {
               </main>
 
 
+
+
+
               {/* Sidebar - Professional Design */}
               <aside className="lg:w-80 w-full">
                 <div className="sticky top-24 space-y-10">
@@ -191,12 +203,12 @@ const ShowBlog = ({ blogs }) => {
                       </div>
                       <h3 className="text-text-primary font-bold text-lg mb-1">{blog.author.name}</h3>
                       <p className="text-accent-primary text-sm font-medium mb-3">
-                        Senior Web Developer
+                        Frontend/Backend Web Developer
                       </p>
                     </div>
 
                     <p className="text-text-secondary text-sm text-center leading-relaxed mb-4">
-                      Passionate about web development, performance optimization, and sharing knowledge with the community through technical writing and open-source contributions.
+                      I work on building fast, clean web apps and write about real-world tech problems, solutions, and useful insights.
                     </p>
                     <a
                       href="https://www.linkedin.com/in/haile-homa-632344336/"
@@ -282,7 +294,7 @@ const ShowBlog = ({ blogs }) => {
                         href="https://www.linkedin.com/in/haile-homa-632344336/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full inline-block bg-accent-primary hover:bg-accent-primary/90 text-text-primary py-2 px-4 rounded-lg font-medium text-sm transition-colors duration-200 text-center"
+                        className="flex items-center justify-center gap-2 bg-[#0A66C2] hover:bg-[#006097] text-white py-2 px-3 rounded-lg text-sm font-medium transition-all duration-300"
                       >
                         Follow on LinkedIn
                       </a>
@@ -330,8 +342,8 @@ const ShowBlog = ({ blogs }) => {
 
                       <div className="flex flex-col sm:flex-row gap-3">
                         <button
-                          type="button"
-                          className="px-5 py-2 bg-blue-300 text-black font-medium rounded-lg shadow-sm transition-all duration-300 hover:bg-blue-400 hover:scale-105"
+                          onClick={goToProjects}
+                          className="px-5 py-2 bg-blue-300 text-black rounded-lg hover:bg-blue-400 transition-all"
                         >
                           {discover.buttonText}
                         </button>
