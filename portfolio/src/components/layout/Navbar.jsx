@@ -71,7 +71,7 @@ function Navbar() {
             <span
               key={id}
               onClick={handleHomeClick}
-              className="cursor-pointer hover:text-blue-400 flex items-center gap-2"
+              className="cursor-pointer hover:text-[#78d3fd] flex items-center gap-2"
             >
               {label}
             </span>
@@ -84,7 +84,7 @@ function Navbar() {
               offset={-70}
               spy={true}
               activeClass="text-[#78D3FD] font-bold border-b-2 border-[#78D3FD]"
-              className="cursor-pointer hover:text-blue-400 flex items-center gap-2"
+              className="cursor-pointer hover:text-[#78d3fd] flex items-center gap-2"
             >
               {label}
             </Link>
@@ -99,7 +99,7 @@ function Navbar() {
 
       {/* Mobile Menu Button */}
       <button
-        className="lg:hidden p-2  text-text-primary hover:text-blue-400"
+        className="lg:hidden p-2  text-text-primary hover:text-[#78d3fd]"
         onClick={toggleSidebar}
       >
         <FaBars size={28} />
@@ -128,7 +128,7 @@ function Navbar() {
         {/* Close Button */}
         <div className="flex justify-end p-4">
           <button onClick={toggleSidebar}>
-            <FaTimes size={28} className=" text-text-primary hover:text-blue-400" />
+            <FaTimes size={28} className=" text-text-primary hover:text-[#78d3fd]" />
           </button>
         </div>
 
@@ -148,7 +148,7 @@ function Navbar() {
                   handleHomeClick();
                   toggleSidebar();
                 }}
-                className="cursor-pointer hover:text-blue-400 flex items-center gap-3"
+                className="cursor-pointer hover:text-[#78d3fd] flex items-center gap-3"
               >
                 <span className="text-xl">{icon}</span>
                 {label}
@@ -163,7 +163,7 @@ function Navbar() {
                 spy={true}
                 activeClass="text-[#78D3FD] font-bold border-b-2 border-[#78D3FD]"
                 onClick={toggleSidebar}
-                className="cursor-pointer hover:text-blue-400 flex items-center gap-3"
+                className="cursor-pointer hover:text-[#78d3fd] flex items-center gap-3"
               >
                 <span className="text-xl">{icon}</span>
                 {label}

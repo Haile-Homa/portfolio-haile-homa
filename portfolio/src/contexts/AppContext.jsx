@@ -20,9 +20,9 @@ export const AppProvider = ({ children }) => {
     // Skills data with unique colors
     const [skills] = useState([
         { name: "JavaScript", percent: 95, color: "#fbbf24" },
-        { name: "React", percent: 92, color: "#60a5fa" },
+        { name: "React", percent: 95, color: "#60a5fa" },
         { name: "TypeScript", percent: 88, color: "#c084fc" },
-        { name: "Node.js", percent: 85, color: "#4ade80" },
+        { name: "Node.js", percent: 95, color: "#4ade80" },
         { name: "Python", percent: 80, color: "#f87171" },
         { name: "Tailwind CSS", percent: 96, color: "#06b6d4" },
     ]);
@@ -30,9 +30,9 @@ export const AppProvider = ({ children }) => {
 
     // Core skills for radial charts
     const [coreSkills] = useState([
-        { name: "Frontend", percent: 94, color: '#6366f1' },
-        { name: "Backend", percent: 87, color: '#10b981' },
-        { name: "System  Design", percent: 80, color: '#f59e0b' },
+        { name: "Frontend", percent: 95, color: '#6366f1' },
+        { name: "Backend", percent: 95, color: '#10b981' },
+        { name: "System  Design", percent: 85, color: '#f59e0b' },
         // { name: "DevOps", percent: 80, color: '#f59e0b' },
         // { name: "Cloud", percent: 83, color: '#8b5cf6' },
     ]);

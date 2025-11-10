@@ -24,7 +24,7 @@ const Services = () => {
         {
             icon: <FaDesktop />,
             title: "Web App Development",
-            desc: "Build fast, responsive apps using React, Vite & Tailwind.",
+            desc: "Build fast, responsive apps using React, Next, Vite, Tailwind and balabalha.",
         },
         {
             icon: <FaCode />,
@@ -39,7 +39,8 @@ const Services = () => {
         {
             icon: <FaRobot />,
             title: "AI-Powered Tools",
-            desc: "Add AI chatbots, quiz generators & intelligent automation.",
+            desc: "Build smart solutions with AI — from chatbots and assistants to automated workflows and content generators."
+            // desc: "Add AI chatbots, quiz generators & intelligent automation.",
         },
         {
             icon: <FaProjectDiagram />,

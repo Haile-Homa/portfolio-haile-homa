@@ -123,8 +123,8 @@ const ShowProjects = ({ projects }) => {
               </h4>
               <div className="flex flex-wrap gap-3 gap-x-6 ml-2">
                 {project.features.map((feature, i) => (
-                  <div key={i} className="flex items-center text-text-secondary ">
-                    <FaCheckCircle className=" mr-2 text-sm" />
+                  <div key={i} className="flex items-center text-text-secondary w-full ">
+                    <FaCheckCircle className=" mr-2 text-sm"  />
                     <span>{feature}</span>
                   </div >
                 ))}

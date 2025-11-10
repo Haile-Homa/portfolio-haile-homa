@@ -1,33 +1,28 @@
 import React from 'react'
 import { motion } from "framer-motion";
 
-const SkillsIntro = ({variantsDownItem}) => {
+const SkillsIntro = ({ variantsDownItem }) => {
   return (
     <>
       <div className='w-full text-left'>
         <motion.h2
-           className="text-2xl md:text-3xl font-bold mb-6"
-           variants={variantsDownItem}
-      
+          className="text-2xl md:text-3xl font-bold mb-6"
+          variants={variantsDownItem}
 
-           >
-           skills & experience
-           </motion.h2>
+
+        >
+          skills & experience
+        </motion.h2>
       </div>
 
       <div className="mb-6 ml-3 md:ml-7 w-full pr-2 md:w-[90%]">
         <motion.p
-           className=" text-sm  leading-relaxed"
-           variants={variantsDownItem}
-           >
-        Full-stack Developer focused on building reliable and user-friendly 
-        applications with the MERN stack. Skilled in creating interactive
-         frontends with React, Tailwind, and Vanilla CSS, and scalable
-          backends with Node.js, Express, and MongoDB. A Mechanical Engineering
-           background strengthens problem-solving, analytical thinking, and 
-           attention to detail. Experienced with Git, Webpack, and modern JavaScript 
-           practices, writing clean, secure, and maintainable code. Curious and adaptable, 
-           always embracing new technologies to deliver practical, high-quality software.
+          className=" text-sm  leading-relaxed"
+          variants={variantsDownItem}
+        >
+          Full-stack developer who builds reliable and easy-to-use web applications with the MERN stack. Creates modern and responsive frontends using React, Tailwind CSS, and Vanilla CSS, and builds strong backends with Node.js, Express, and MongoDB.
+          With a Mechanical Engineering background, brings solid problem-solving skills, clear thinking, and attention to detail to every project. Works confidently with Git, Webpack, and modern JavaScript, always aiming to write clean, secure, and 
+          well-organized code. Loves learning new tools and technologies to make software that’s both useful and high quality.
           {/* Full-stack Developer focused on building reliable, efficient, and
           
           user-friendly applications using the MERN stack. Creates

@@ -5,10 +5,7 @@ import local_market_icon from './images/local-market-icon.png'
 import mobile_banking_icon from './images/mobile-banking-icon.png'
 import education_icon from './images/education-icon.png'
 import github_svg from './images/github.svg'
-import linkedin_svg from './images/linkedin.svg'
-import telegram_svg from './images/telegram.svg'
-import email_svg from './images/email .svg'
-import gmailicon from './images/Gmail_icon.png'
+
 import htmlicon from './images/HTML5.png'
 import cssicon from './images/CSS3.png'
 import jsicon from './images/JavaScript.png'
@@ -22,8 +19,22 @@ import webpackicon from './images/Webpack.png'
 import nodejsicon from './images/Node.js.png'
 import nexticon from './images/Next.js.png'
 import locationicon from './images/location.svg'
-import telephoneicon from './images/telephone-call.png'
 import footer_svg from './images/footer.svg'
+
+//social media icons
+import linkedin_svg from './social-media-icon/linkedin.svg'
+import telegram_svg from './social-media-icon/telegram.svg'
+import email_svg from './social-media-icon/email.svg'
+import gmailicon from './social-media-icon/Gmail_icon.png'
+import telephoneicon from './social-media-icon/telephone-call.png'
+import mediumicon from './social-media-icon/medium.png'
+import devtoicon from './social-media-icon/dev-to.svg'
+import whatsapp from './social-media-icon/whatsapp.svg'
+import discord from './social-media-icon/discord-icon.svg'
+
+
+
+
 
 
 import author from './blogimg/author.png'
@@ -106,17 +117,24 @@ const assets = {
     local_market_icon,
     mobile_banking_icon,
     education_icon,
+    footer_svg,
+
+
+    /* contact icon icon and scoial media */
+    locationicon,
+    telephoneicon,
+    gmailicon,
     github_svg,
     linkedin_svg,
     telegram_svg,
     email_svg,
-    footer_svg,
+    mediumicon,
+    devtoicon,
+    whatsapp,
+     discord,
+    
 
 
-    /* contact icon */
-    locationicon,
-    telephoneicon,
-    gmailicon,
 
 
     /* technologies icon */

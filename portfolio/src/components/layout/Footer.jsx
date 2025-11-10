@@ -42,7 +42,7 @@ const Footer = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 1, ease: "easeOut" }}
           className="flex justify-center md:justify-end ">
-          <SocialBtn exclude={["Resume"]} staggerRightItem={staggerRightItem} /> {/* Add more if needed */}
+          <SocialBtn exclude={["Resume", "dev.to", "WhatsApp", "Discord" ]} staggerRightItem={staggerRightItem} /> {/* Add more if needed */}
         </motion.div>
         
       </div>

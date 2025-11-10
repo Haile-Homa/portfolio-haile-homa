@@ -89,19 +89,3 @@ export default Skills
 
 
 
-
-
-
-/* 
- const { staggerRightContainer, staggerRightItem, fadeInLeft } = useAnimations();
-    console.log(staggerRightContainer);
-
-    import { motion } from "framer-motion";
-import { useAnimations } from "../../context/AnimationContext";
-
-
-                    variants={fadeInLeft}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false, amount: 0.3 }}
-                    transition={{ duration: 1, ease: "easeOut" }} */

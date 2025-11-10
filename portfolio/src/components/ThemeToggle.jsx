@@ -24,7 +24,7 @@ const ThemeToggle = () => {
         ) : (
 
           // Dark Mode Icon
-          <div className="flex items-center gap-2 text-[#1bacef]  ">
+          <div className="flex items-center gap-2 text-[#78d3fd]  ">
             <FaMoon className="text-xl" />
             <span className="text-sm font-medium ">Dark</span>
           </div>

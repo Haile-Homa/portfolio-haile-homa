@@ -19,7 +19,7 @@ const Hero = () => {
         /* in this case i made my hero section to be like good mt-60% hence to later to rembere it i write this text */
         <section className=" flex flex-col justify-center items-center flex-grow px-6 pt-2 mt-[45%] md:mt-0">
 
-            {/* 🌄 Background Layer */}
+            {/* Background Layer */}
             <motion.div
                 className="absolute top-15 md:top-0 right-0 min-h-screen w-[80%] md:w-[55%] h-full pointer-events-none bg-contain bg-no-repeat bg-right-top z-0"
                 style={{
@@ -46,7 +46,7 @@ const Hero = () => {
                         variants={staggerLeftItem}
                     >
                         {/* Hello, I'm <br /> Haile Homa <span>👋</span> */}
-                          Hello, I'm <br /> Haile Homa <span>🐐</span>
+                        Hello, I'm <br /> Haile Homa <span>🐐</span>
                     </motion.h1>
 
                     <motion.p
@@ -61,14 +61,14 @@ const Hero = () => {
                     <div className="flex gap-4">
                         <motion.a
                             href="#projects"
-                            className="bg-blue-300 text-bl px-6 py-3 rounded-lg shadow-md hover:bg-blue-400 transition disabled:opacity-50"
+                            className="bg-[#78d3fd] text-bl px-6 py-3 rounded-lg shadow-md hover:bg-blue-400 transition disabled:opacity-50"
                             variants={staggerLeftItem}
                         >
                             Projects
                         </motion.a>
 
                         <motion.a
-                            href="https://www.linkedin.com"
+                            href="https://www.linkedin.com/in/haile-homa-632344336/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="border border-gray-800 px-6 py-3 rounded-md hover:bg-gray-100 transition dark:border-slate-200 dark:text-slate-200 "

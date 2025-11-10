@@ -30,11 +30,9 @@ const ProjectIntro = () => {
                     viewport={{ once: false, amount: 0.3 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
-                    This portfolio brings together the projects I’ve worked on throughout
-                    my self-taught journey. Each one tells a part of the story — from
-                    learning frontend design to building backend systems and working
-                    with databases. Some projects are finished, some are still in progress,
-                    and others are ideas I’m excited to explore.To see the finished projects,
+                    This portfolio brings together projects that highlight different sides of web development — design, 
+                    functionality, and data. Every project represents progress, creativity, and a drive to build software 
+                    that works beautifully and efficiently.To see the finished projects,
                     just click and view.”
                     {/* I’ve been working on different projects as part of my
           self-taught learning journey, and each one reflects the
