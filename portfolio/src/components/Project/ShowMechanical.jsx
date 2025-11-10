@@ -12,7 +12,7 @@ const ShowMechanical = ({ project }) => {
           <h1 className="text-center text-3xl font-bold text-text-primary mb-4">
             {project.name}
           </h1>
-          <p className="text-lg text-text-secondary">
+          <p className="text-sm text-lg text-text-secondary">
             {project.description}
           </p>
         </div>
