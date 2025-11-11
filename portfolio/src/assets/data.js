@@ -144,7 +144,7 @@ export const projects = [
       "Secure user authentication and protected dashboards using Firebase"
 
     ],
-    github: "https://github.com/yourusername/tena-agri-ai",
+    github: "https://github.com/Haile-Homa/Tena------Agri-ai",
     liveDemo: "https://tenaagri.example.com"
   },
   {
@@ -201,7 +201,7 @@ export const projects = [
       "Fast development and optimized build with Vite",
       "Clean and easy-to-read code following React best practices"
     ],
-    github: "https://github.com/yourusername/portfolio-gui",
+    github: "https://github.com/Haile-Homa/gui-portfolio",
     liveDemo: "https://yourguiportfolio.example.com"
   }
 
@@ -355,7 +355,7 @@ export const projects = [
       "Interactive dashboard and messaging system (demo/partial)",
       "Simple, responsive design for desktop and mobile devices"
     ],
-    github: "https://github.com/yourusername/limitless-learning",
+    github: "https://github.com/Haile-Homa/lms-learning",
     liveDemo: "https://limitlesslearning.example.com"
   }
 
@@ -422,7 +422,7 @@ export const projects = [
       "Push notifications",
       "Offline support and mobile-friendly design"
     ],
-    github: "https://github.com/yourusername/fayda-equb",
+    github: "https://github.com/Haile-Homa/fayda-equb-pwa",
     liveDemo: "https://faydaequb.example.com"
   }
 
@@ -463,7 +463,7 @@ export const projects = [
       "Album organization and intuitive search functionality",
       "Showcases my graphic design and UI/UX skills"
     ],
-    github: "https://github.com/yourusername/gallery-app",
+    github: "https://github.com/Haile-Homa/gallery-app-",
     liveDemo: "https://galleryapp.example.com"
   }
   ,
@@ -510,7 +510,7 @@ export const projects = [
       "Showcases my graphic and UI/UX design skills",
       "Currently in design and prototyping stage"
     ],
-    github: "https://github.com/yourusername/limitless-chat",
+    github: "https://github.com/Haile-Homa/limitless-chat",
     liveDemo: "https://limitlesschat.example.com"
   },
 
@@ -591,7 +591,7 @@ export const projects = [
     <li>Shows practical experience with SolidWorks and mechanical design</li>
   </ul>
 `,
-    github: "https://github.com/yourusername/solidworks-engine",
+    github: "https://github.com/Haile-Homa/engine-assembly",
     liveDemo: "https://solidworks-engine-demo.example.com"
   }
 
@@ -855,7 +855,7 @@ jobs:
 
 
   {
-   "id": "64fc2a1e9b3f4d0012345673",
+    "id": "64fc2a1e9b3f4d0012345673",
     thumbnailBlog: assets.blog4,
     image: assets.blog4,
     alt: "A diagram showing the relationship between a Dockerfile, Docker Image, and Docker Container.",
@@ -1760,7 +1760,7 @@ export const contact = {
   socialLinks: [
     { platform: "linkedin", icon: assets.linkedin_svg, url: "https://www.linkedin.com/in/haile-homa-632344336/" },
     { platform: "telegram", icon: assets.telegram_svg, url: "https://t.me/haile_dev" },
-    { platform: "email", icon: assets.email_svg, url:  "mailto:hailehoma1@gmail.com" },
+    { platform: "email", icon: assets.email_svg, url: "mailto:hailehoma1@gmail.com" },
     { platform: "WhatsApp", icon: assets.whatsapp, url: "https://wa.me/+251935636651" },
   ],
 };
