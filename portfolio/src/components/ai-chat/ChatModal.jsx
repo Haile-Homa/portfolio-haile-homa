@@ -43,7 +43,7 @@ const ChatModal = ({ onClose }) => {
 
 
 
-  // ✉️ Send message to backend
+  // Send message to backend
   const handleSend = async () => {
     if (!input.trim()) return;
 
