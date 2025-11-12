@@ -23,7 +23,6 @@ import ChatModal from "./components/ai-chat/ChatModal.jsx";
 
 
 
-
 const App = () => {
 
     const projectsRef = useRef(null);
