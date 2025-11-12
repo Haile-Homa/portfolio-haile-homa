@@ -5,7 +5,6 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import "../../styles/ChatMarkdown.css";
 
-
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001/api";
 
 const ChatModal = ({ onClose }) => {
@@ -13,37 +12,43 @@ const ChatModal = ({ onClose }) => {
     {
       role: "assistant",
       content:
-        "👋 **Hey there!** I’m *Haile Homa’s 🐐 AI Assistant*\nAsk me anything about Haile’s **projects**, **skills**, or **journey** — I’m here to help! ",
+        "👋 **Hey there!** I’m *Haile Homa’s 🐐 AI Assistant*\nAsk me anything about Haile’s **projects**, **skills**, or **journey** — I’m here to help!",
     },
   ]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  // Auto-scroll to latest message
+  // Auto-scroll
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    const timer = setTimeout(() => {
+      messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, 50);
+    return () => clearTimeout(timer);
   }, [messages, loading]);
 
-
-
-  // Typewriter Function
-  const typeWriterEffect = (text, onUpdate, onComplete, speed = 30) => {
-    let index = 0;
+  // Typewriter effect
+  const typeWriterEffect = (text, callback) => {
+    let i = 0;
     const interval = setInterval(() => {
-      onUpdate(text.slice(0, index + 1));
-      index++;
-      if (index === text.length) {
+      setMessages((prev) => {
+        const lastMsg = prev[prev.length - 1];
+        if (!lastMsg || lastMsg.role !== "assistant") return prev;
+        const updated = [...prev];
+        updated[updated.length - 1] = {
+          ...lastMsg,
+          content: text.slice(0, i + 1),
+        };
+        return updated;
+      });
+      i++;
+      if (i >= text.length) {
         clearInterval(interval);
-        onComplete?.();
+        if (callback) callback();
       }
-    }, speed);
+    }, 20); // speed (ms per character)
   };
 
-
-
-
-  // Send message to backend
   const handleSend = async () => {
     if (!input.trim()) return;
 
@@ -66,21 +71,11 @@ const ChatModal = ({ onClose }) => {
         throw new Error(data.error || `Request failed with status ${res.status}`);
       }
 
-      // Animate AI typing effect
-      let aiMsg = { role: "assistant", content: "" };
-      setMessages((prev) => [...prev, aiMsg]);
+      // Add empty assistant message first
+      setMessages((prev) => [...prev, { role: "assistant", content: "" }]);
 
-      typeWriterEffect(
-        data.response,
-        (partialText) => {
-          setMessages((prev) => {
-            const updated = [...prev];
-            updated[updated.length - 1] = { role: "assistant", content: partialText };
-            return updated;
-          });
-        },
-        () => setLoading(false) // Stop loading when done
-      );
+      // Animate response
+      typeWriterEffect(data.response, () => setLoading(false));
     } catch (err) {
       console.error("💥 Chat Error:", err);
       setMessages((prev) => [
@@ -93,7 +88,6 @@ const ChatModal = ({ onClose }) => {
       setLoading(false);
     }
   };
-
 
   return (
     <div className="fixed bottom-24 right-6 w-85 sm:w-96 h-[28rem] 
@@ -178,4 +172,3 @@ const ChatModal = ({ onClose }) => {
 };
 
 export default ChatModal;
-
