@@ -8,8 +8,7 @@ export const projects = [
   {
     id: "ai-terminal-portfolio",
     name: "Terminal Portfolio - AI-Powered ",
-    description:
-      "This is a terminal-style portfolio powered by AI. You can explore my work using commands like 'about', 'projects', or 'skills', or chat with an AI assistant that responds in nicely formatted Markdown, making it easy to read and giving it a real coding feel. The interface is designed to mimic a real terminal, complete with blinking cursors, typing animations, and command history, creating an immersive experience for anyone who loves tech. I built it with React 19, Vite, and modern tools like ansi-to-html and React Markdown to keep it fast, interactive, and visually clean.",
+    description: "This is a terminal-style portfolio powered by AI. You can explore my work using commands like 'about', 'projects', or 'skills', or chat with an AI assistant that responds in nicely formatted Markdown, making it easy to read and giving it a real coding feel. The interface is designed to mimic a real terminal, complete with blinking cursors, typing animations, and command history, creating an immersive experience for anyone who loves tech. I built it with React 19, Vite, and modern tools like ansi-to-html and React Markdown to keep it fast, interactive, and visually clean.",
     imageUrl: assets.terminal_thumbnail, // replace with your AI portfolio thumbnail
     status: "live",
     technologies: [

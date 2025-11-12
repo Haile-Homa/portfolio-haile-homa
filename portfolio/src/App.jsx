@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import AboutMe from './pages/AboutMe.jsx';
 import Skills from './pages/Skills.jsx';
@@ -17,13 +17,18 @@ import ShowBlog from "./components/Blog/ShowBlog.jsx";
 
 import PWAInstallPrompt from './components/PWAInstallPrompt'
 
+// Import new components
+import ChatButton from "./components/ai-chat/ChatButton.jsx";
+import ChatModal from "./components/ai-chat/ChatModal.jsx";
+
 
 
 
 const App = () => {
 
     const projectsRef = useRef(null);
-  const location = useLocation();
+    const location = useLocation();
+    const [isChatOpen, setIsChatOpen] = useState(false);
 
   useEffect(() => {
     if (location.state?.scrollTo === "projects") {
@@ -62,6 +67,12 @@ const App = () => {
       </main>
       <Footer />
     </div>
+
+
+     {/* Floating AI Chat */}
+      {isChatOpen && <ChatModal onClose={() => setIsChatOpen(false)} />}
+      <ChatButton onClick={() => setIsChatOpen(true)} />
+
      <PWAInstallPrompt />
     </>
   );
