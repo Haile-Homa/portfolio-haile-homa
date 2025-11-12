@@ -1,0 +1,177 @@
+/* 🎨 ChatMarkdown.css — custom Markdown styles for AI messages */
+
+.chat-md {
+  font-family: "Inter", system-ui, sans-serif;
+  line-height: 1.6; /* Increased for better readability */
+  font-size: 0.95rem; /* Slightly larger */
+  color: #1e293b; /* Slate-800 */
+}
+
+/* 🧭 Headings */
+.chat-md h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 1rem 0 0.75rem 0; /* More spacing around headings */
+  padding-bottom: 0.25rem;
+  color: #0c4a6e; /* Sky-900 */
+  border-bottom: 1px solid #e2e8f0; /* Subtle separator */
+}
+
+.chat-md h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem 0; /* More spacing */
+  color: #0369a1; /* Sky-700 */
+}
+
+.chat-md h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.25rem 0 0.5rem 0; /* More spacing */
+  color: #0284c7; /* Sky-600 */
+}
+
+/* ✍️ Paragraphs */
+.chat-md p {
+  margin: 0.75rem 0; /* More breathing room between paragraphs */
+  padding: 0.1rem 0;
+}
+
+/* 📋 Lists */
+.chat-md ul,
+.chat-md ol {
+  margin: 0.75rem 0 1rem 1.5rem; /* Better spacing */
+  padding-left: 0.5rem;
+}
+.chat-md li {
+  margin-bottom: 0.5rem; /* More space between list items */
+  padding: 0.1rem 0;
+}
+.chat-md ul {
+  list-style-type: disc;
+}
+.chat-md ol {
+  list-style-type: decimal;
+}
+
+/* 💻 Inline code */
+.chat-md code {
+  background: rgba(56, 189, 248, 0.1); /* Light sky blue */
+  color: #0369a1;
+  padding: 0.2rem 0.4rem; /* Slightly more padding */
+  border-radius: 6px; /* Slightly more rounded */
+  font-family: "Fira Code", monospace;
+  font-size: 0.85em;
+  margin: 0 0.1rem;
+}
+
+/* 🧱 Code blocks */
+.chat-md pre {
+  background: #0f172a; /* Dark slate */
+  color: #e2e8f0;
+  padding: 1rem 1.25rem; /* More padding for code blocks */
+  border-radius: 0.75rem; /* More rounded */
+  overflow-x: auto;
+  font-family: "Fira Code", monospace;
+  font-size: 0.85em;
+  margin: 1rem 0; /* More space around code blocks */
+  border: 1px solid #334155; /* Subtle border */
+}
+
+/* 💬 Blockquotes */
+.chat-md blockquote {
+  border-left: 4px solid #38bdf8;
+  padding: 0.75rem 1rem; /* More padding */
+  margin: 1rem 0; /* More spacing */
+  color: #475569;
+  background: rgba(56, 189, 248, 0.05);
+  border-radius: 0.5rem; /* More rounded */
+  font-style: italic;
+}
+
+/* 🔗 Links */
+.chat-md a {
+  color: #0284c7;
+  text-decoration: underline;
+  text-underline-offset: 2px; /* Better underline positioning */
+}
+.chat-md a:hover {
+  color: #0369a1;
+  text-decoration-thickness: 2px; /* Thicker on hover */
+}
+
+/* 🧾 Tables */
+.chat-md table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0; /* More spacing */
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.chat-md th,
+.chat-md td {
+  border: 1px solid rgba(100, 116, 139, 0.3);
+  padding: 0.75rem 1rem; /* More cell padding */
+  text-align: left;
+  font-size: 0.9em;
+}
+.chat-md th {
+  background: rgba(56, 189, 248, 0.15); /* Slightly stronger background */
+  font-weight: 600;
+}
+
+/* 🖼️ Images */
+.chat-md img {
+  max-width: 100%;
+  border-radius: 0.75rem; /* More rounded */
+  margin: 1rem 0; /* More spacing */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Horizontal Rule */
+.chat-md hr {
+  margin: 1.5rem 0;
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #38bdf8, transparent);
+  opacity: 0.5;
+}
+
+/* 🌙 Dark Mode */
+.dark .chat-md {
+  color: #e2e8f0;
+}
+.dark .chat-md h1,
+.dark .chat-md h2,
+.dark .chat-md h3 {
+  color: #bae6fd;
+}
+.dark .chat-md h1 {
+  border-bottom-color: #334155;
+}
+.dark .chat-md code {
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+}
+.dark .chat-md pre {
+  background: #1e293b;
+  color: #f8fafc;
+  border-color: #475569;
+}
+.dark .chat-md blockquote {
+  background: rgba(56, 189, 248, 0.15);
+  color: #cbd5e1;
+}
+.dark .chat-md a {
+  color: #38bdf8;
+}
+.dark .chat-md th {
+  background: rgba(56, 189, 248, 0.25);
+}
+.dark .chat-md table {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.dark .chat-md hr {
+  background: linear-gradient(90deg, transparent, #7dd3fc, transparent);
+}

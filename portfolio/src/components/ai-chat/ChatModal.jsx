@@ -3,6 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { FaTimes, FaPaperPlane, FaRobot } from "react-icons/fa";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import "../../styles/ChatMarkdown.css";
+
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3001/api";
 
@@ -23,7 +25,25 @@ const ChatModal = ({ onClose }) => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
 
-  // Send message to backend
+
+
+  // Typewriter Function
+  const typeWriterEffect = (text, onUpdate, onComplete, speed = 30) => {
+    let index = 0;
+    const interval = setInterval(() => {
+      onUpdate(text.slice(0, index + 1));
+      index++;
+      if (index === text.length) {
+        clearInterval(interval);
+        onComplete?.();
+      }
+    }, speed);
+  };
+
+
+
+
+  // ✉️ Send message to backend
   const handleSend = async () => {
     if (!input.trim()) return;
 
@@ -42,16 +62,27 @@ const ChatModal = ({ onClose }) => {
 
       const data = await res.json();
 
-      // Handle errors from backend directly
       if (!res.ok || !data.success) {
         throw new Error(data.error || `Request failed with status ${res.status}`);
       }
 
-      const aiMsg = { role: "assistant", content: data.response };
+      // Animate AI typing effect
+      let aiMsg = { role: "assistant", content: "" };
       setMessages((prev) => [...prev, aiMsg]);
+
+      typeWriterEffect(
+        data.response,
+        (partialText) => {
+          setMessages((prev) => {
+            const updated = [...prev];
+            updated[updated.length - 1] = { role: "assistant", content: partialText };
+            return updated;
+          });
+        },
+        () => setLoading(false) // Stop loading when done
+      );
     } catch (err) {
       console.error("💥 Chat Error:", err);
-
       setMessages((prev) => [
         ...prev,
         {
@@ -59,10 +90,10 @@ const ChatModal = ({ onClose }) => {
           content: `⚠️ **Error:** ${err.message || "Something went wrong."}\n\n🔄 Try again in a bit..`,
         },
       ]);
-    } finally {
       setLoading(false);
     }
   };
+
 
   return (
     <div className="fixed bottom-24 right-6 w-85 sm:w-96 h-[28rem] 
@@ -84,14 +115,14 @@ const ChatModal = ({ onClose }) => {
       {/* Chat Section */}
       <div className="flex-1 overflow-y-auto p-3 space-y-3 text-sm 
         bg-gray-50 dark:bg-[#1e293b] text-gray-800 dark:text-gray-100 
-        transition-colors duration-300 scrollbar-thin scrollbar-thumb-blue-400 dark:scrollbar-thumb-blue-600">
+        transition-colors duration-300 scrollbar-thin scrollbar-thumb-sky-400 dark:scrollbar-thumb-sky-600">
 
         {messages.map((msg, i) => (
           <div
             key={i}
             className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
           >
-            <div key={i} className={`p-2 rounded-lg whitespace-pre-wrap leading-relaxed ${msg.role === "user"
+            <div key={i} className={`chat-md p-2 rounded-lg  leading-relaxed ${msg.role === "user"
               ? "bg-sky-100 dark:bg-sky-800 text-right"
               : "bg-gray-200 dark:bg-gray-700 text-left"
               }`}>
