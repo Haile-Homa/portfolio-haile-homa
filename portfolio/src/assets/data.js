@@ -74,7 +74,7 @@ export const projects = [
       "Responsive, mobile-friendly interface",
     ],
     github: "https://github.com/Haile-Homa/Terminal-portfolio",
-    liveDemo: "https://youraiterminalportfolio.example.com"
+    liveDemo: "https://terminal-portfolio-haile-homa.vercel.app/"
   },
 
   {
@@ -144,7 +144,7 @@ export const projects = [
 
     ],
     github: "https://github.com/Haile-Homa/Tena------Agri-ai",
-    liveDemo: "https://tenaagri.example.com"
+    liveDemo: "https://tenaagri-ai.vercel.app/"
   },
   {
     id: "portfolio-gui",
@@ -201,7 +201,7 @@ export const projects = [
       "Clean and easy-to-read code following React best practices"
     ],
     github: "https://github.com/Haile-Homa/gui-portfolio",
-    liveDemo: "https://yourguiportfolio.example.com"
+    liveDemo: "https://portfolio-haile-homa.vercel.app/"
   }
 
 
@@ -274,7 +274,7 @@ export const projects = [
       "Settings to customize the chat experience"
     ],
     github: "https://github.com/Haile-Homa/saba-gpt",
-    liveDemo: "https://sabagpt.example.com"
+    liveDemo: "https://saba-gpt.vercel.app/"
   }
   ,
   {
@@ -355,7 +355,7 @@ export const projects = [
       "Simple, responsive design for desktop and mobile devices"
     ],
     github: "https://github.com/Haile-Homa/lms-learning",
-    liveDemo: "https://limitlesslearning.example.com"
+    liveDemo: "https://limitless-learning-mu.vercel.app/"
   }
 
 
@@ -422,7 +422,7 @@ export const projects = [
       "Offline support and mobile-friendly design"
     ],
     github: "https://github.com/Haile-Homa/fayda-equb-pwa",
-    liveDemo: "https://faydaequb.example.com"
+    liveDemo: "https://fayda-equb.vercel.app/login"
   }
 
   ,
@@ -463,7 +463,7 @@ export const projects = [
       "Showcases my graphic design and UI/UX skills"
     ],
     github: "https://github.com/Haile-Homa/gallery-app-",
-    liveDemo: "https://galleryapp.example.com"
+    liveDemo: "https://github.com/Haile-Homa/gallery-app-"
   }
   ,
 
@@ -510,7 +510,7 @@ export const projects = [
       "Currently in design and prototyping stage"
     ],
     github: "https://github.com/Haile-Homa/limitless-chat",
-    liveDemo: "https://limitlesschat.example.com"
+    liveDemo: "https://github.com/Haile-Homa/limitless-chat"
   },
 
 
