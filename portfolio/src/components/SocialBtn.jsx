@@ -8,7 +8,7 @@ function SocialBtn({ exclude = [] }) {
   const { staggerRightContainer, staggerRightItem } = useAnimations();
 
   const buttons = [
-    { name: "Resume", type: "text", url: "/resume.pdf" }, // or external link
+    { name: "Resume", type: "text", url: "https://raw.githubusercontent.com/Haile-Homa/resume/main/hailehoma-resume.pdf" }, // or external link
     { name: "GitHub", type: "img", src: assets.github_svg, url: "https://github.com/Haile-Homa" },
     { name: "LinkedIn", type: "img", src: assets.linkedin_svg, url: "https://www.linkedin.com/in/haile-homa-632344336/" },
     { name: "Telegram", type: "img", src: assets.telegram_svg, url: "https://t.me/haile_dev" },
