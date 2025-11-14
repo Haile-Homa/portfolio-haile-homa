@@ -77,11 +77,11 @@ const ShowProjects = ({ projects }) => {
           {/* Technologies Section */}
           {project.technologies && project.technologies.length > 0 && (
             <div className="mt-6">
-              <h4 className="text-cyan-400 text-lg mb-4 flex items-center gap-2">
+              <h4 className="text-cyan-400 text-lg mb-4 flex items-center  gap-2">
                 <FaTools className="text-cyan-400 text-xl" />
                 Built With:
               </h4>
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap sm:justify-around  gap-4">
                 {project.technologies.map((tech, i) => (
                   <div
                     key={i}
