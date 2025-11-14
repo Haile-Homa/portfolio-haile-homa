@@ -35,17 +35,17 @@ export const ThemeProvider = ({ children }) => {
 
 
     useEffect(() => {
-    const savedTheme = localStorage.getItem('theme');
+        const savedTheme = localStorage.getItem('theme');
 
-    if (savedTheme === 'dark') {
-        setIsDark(true);
-        document.documentElement.classList.add('dark');
-    } else {
-        // Always start LIGHT by default
-        setIsDark(false);
-        document.documentElement.classList.remove('dark');
-    }
-}, []);
+        if (savedTheme === 'dark') {
+            setIsDark(true);
+            document.documentElement.classList.add('dark');
+        } else {
+            // Always start LIGHT by default
+            setIsDark(false);
+            document.documentElement.classList.remove('dark');
+        }
+    }, []);
 
 
     const toggleTheme = () => {
