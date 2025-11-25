@@ -144,8 +144,8 @@ export const projects = [
 
     ],
     github: "https://github.com/Haile-Homa/Tena------Agri-ai",
-    // liveDemo: "https://tenaagri-ai.vercel.app/"
-    liveDemo: "https://not work.vercel.app/"
+    liveDemo: "https://tenaagri-ai.vercel.app/"
+    // liveDemo: "https://not work.vercel.app/"
   },
   {
     id: "portfolio-gui",

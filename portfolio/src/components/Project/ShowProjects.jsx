@@ -13,13 +13,13 @@ const ShowProjects = ({ projects }) => {
 
   const project = projects.find(proj => proj.id === projectId);
 
-    // Scroll to top when component mounts or projectId changes
+  // Scroll to top when component mounts or projectId changes
   useEffect(() => {
-     window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth", // <-- makes it scroll smoothly
-  });
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth", // <-- makes it scroll smoothly
+    });
   }, [projectId, location.pathname]);
 
 
@@ -44,11 +44,11 @@ const ShowProjects = ({ projects }) => {
 
 
 
-      <div className=" flex flex-col md:flex-row  px-4  ">
+      <div className=" flex flex-col lg:flex-row  px-4  ">
 
         {/* Image + Description Layout */}
 
-        <div className="flex  justify-center items-center md:mr-10 md:ml-5 mb-6 max-w-[650px] h-full">
+        <div className="flex  justify-center items-center md:mr-10 md:ml-5 mb-6 lg:max-w-[600px] h-full">
           <img
             src={project.imageUrl}
             alt={project.name}
@@ -77,15 +77,17 @@ const ShowProjects = ({ projects }) => {
           {/* Technologies Section */}
           {project.technologies && project.technologies.length > 0 && (
             <div className="mt-6">
-              <h4 className="text-cyan-400 text-lg mb-4 flex items-center  gap-2">
+              <h4 className="text-cyan-400 text-lg mb-4 flex items-center gap-2">
                 <FaTools className="text-cyan-400 text-xl" />
                 Built With:
               </h4>
-              <div className="flex flex-wrap sm:justify-around  gap-4">
+
+              {/*  CHANGED: Flex → Grid */}
+              <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                 {project.technologies.map((tech, i) => (
                   <div
                     key={i}
-                    className="border border-green-400 border-opacity-25 rounded-lg p-3 text-center w-28 bg-bg-tertiary transition-transform duration-300 hover:-translate-y-1 hover:border-green-400"
+                    className="border border-green-400 border-opacity-25 rounded-lg p-3 text-center bg-bg-tertiary transition-transform duration-300 hover:-translate-y-1 hover:border-green-400"
                     style={{ borderColor: `${tech.color}40` }}
                   >
                     <div
@@ -114,6 +116,7 @@ const ShowProjects = ({ projects }) => {
             </div>
           )}
 
+
           {/* Features Section */}
           {project.features && project.features.length > 0 && (
             <div className="mt-6">
@@ -124,7 +127,7 @@ const ShowProjects = ({ projects }) => {
               <div className="flex flex-wrap gap-3 gap-x-6 ml-2">
                 {project.features.map((feature, i) => (
                   <div key={i} className="flex items-center text-text-secondary w-full ">
-                    <FaCheckCircle className=" mr-2 text-sm"  />
+                    <FaCheckCircle className=" mr-2 text-sm" />
                     <span>{feature}</span>
                   </div >
                 ))}
