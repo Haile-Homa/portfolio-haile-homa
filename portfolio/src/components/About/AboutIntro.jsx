@@ -28,7 +28,7 @@ const AboutIntro = () => {
                         variants={staggerLeftItem}
                         className="mb-2 pl-1"
                     >
-                        Hi 👋 , I’m Haile Homa — Full-Stack Engineer & Software Developer  focused on building practical and reliable digital solutions.
+                    👋 Hi , I’m Haile Homa — Full-Stack Engineer & Software Developer  focused on building practical and reliable digital solutions.
                     </motion.p>
 
                     <motion.p
