@@ -526,74 +526,74 @@ export const projects = [
 
 
   // ========== MECHANICAL PROJECTS ==========
-  {
-    id: "solidworks-engine",
-    name: "Engine Assembly (SolidWorks)",
-    type: "mechanical",
-    shortDescription: "3D modeling and assembly of engine parts in SolidWorks",
-    description: "During my Mechanical Engineering studies at Bahir Dar University, I designed and modeled this engine project on my own. I created all parts, including the piston, piston pin, connecting rod, crankshaft, upper block, and lower block, and assembled them into a half-cut engine model. This project helped me practice important SolidWorks skills like sketching, extrusion, revolved features, cuts, chamfers, fillets, patterns, and assembly mates.",
-    imageUrl: assets.engine_thumbnail,
-    videoUrl: "https://ia601409.us.archive.org/16/items/soldiworks/soldiworks.mp4",
-    images: [
-      assets.mech1,
-      assets.mech2,
-      assets.mech3,
-      assets.mech4,
-      assets.mech5,
-      assets.mech6,
-      assets.mech7,
-      assets.mech8,
-      assets.mech9,
-      assets.mech10,
-      assets.mech11,
-      assets.mech12,
-      assets.mech13,
-      assets.mech14,
-      assets.mech15,
-      assets.mech16,
-    ],
+//   {
+//     id: "solidworks-engine",
+//     name: "Engine Assembly (SolidWorks)",
+//     type: "mechanical",
+//     shortDescription: "3D modeling and assembly of engine parts in SolidWorks",
+//     description: "During my Mechanical Engineering studies at Bahir Dar University, I designed and modeled this engine project on my own. I created all parts, including the piston, piston pin, connecting rod, crankshaft, upper block, and lower block, and assembled them into a half-cut engine model. This project helped me practice important SolidWorks skills like sketching, extrusion, revolved features, cuts, chamfers, fillets, patterns, and assembly mates.",
+//     imageUrl: assets.engine_thumbnail,
+//     videoUrl: "https://ia601409.us.archive.org/16/items/soldiworks/soldiworks.mp4",
+//     images: [
+//       assets.mech1,
+//       assets.mech2,
+//       assets.mech3,
+//       assets.mech4,
+//       assets.mech5,
+//       assets.mech6,
+//       assets.mech7,
+//       assets.mech8,
+//       assets.mech9,
+//       assets.mech10,
+//       assets.mech11,
+//       assets.mech12,
+//       assets.mech13,
+//       assets.mech14,
+//       assets.mech15,
+//       assets.mech16,
+//     ],
 
-    status: "live",
-    technologies: [
-      { name: "SolidWorks", icon: assets.solidworks, color: "#D66224" }
-    ],
-    features: [
-      "Modeled all main engine components from scratch ",
-      "Designed precise parts like piston, crankshaft, and connecting rod ",
-      "Used Extrude, Revolve, Fillet, and Cut features for shaping ",
-      "Applied mates to assemble parts with correct motion ",
-      "Created a half-cut engine model for better internal view ",
-      "Added simple motion simulation to show rotation and movement ",
-      "Practiced section views and exploded assembly views ",
-      "Ensured dimensional accuracy and smooth fitting of parts ",
-      "Learned real-world engine mechanism and assembly workflow ",
-      "Practiced section views ",
-    ],
-    richDescription: `
-  <h2>Project Overview</h2>
-  <p>This engine assembly project was completed independently during my Mechanical Engineering studies at Bahir Dar University. I designed and modeled all engine parts and assembled them into a half-cut engine model.</p>
+//     status: "live",
+//     technologies: [
+//       { name: "SolidWorks", icon: assets.solidworks, color: "#D66224" }
+//     ],
+//     features: [
+//       "Modeled all main engine components from scratch ",
+//       "Designed precise parts like piston, crankshaft, and connecting rod ",
+//       "Used Extrude, Revolve, Fillet, and Cut features for shaping ",
+//       "Applied mates to assemble parts with correct motion ",
+//       "Created a half-cut engine model for better internal view ",
+//       "Added simple motion simulation to show rotation and movement ",
+//       "Practiced section views and exploded assembly views ",
+//       "Ensured dimensional accuracy and smooth fitting of parts ",
+//       "Learned real-world engine mechanism and assembly workflow ",
+//       "Practiced section views ",
+//     ],
+//     richDescription: `
+//   <h2>Project Overview</h2>
+//   <p>This engine assembly project was completed independently during my Mechanical Engineering studies at Bahir Dar University. I designed and modeled all engine parts and assembled them into a half-cut engine model.</p>
 
-  <h3>Design and Modeling</h3>
-  <ul>
-    <li>Created parts like piston, piston pin, connecting rod, crankshaft, upper and lower blocks</li>
-    <li>Used SolidWorks features: sketching, extrusion, revolved features, cuts, chamfers, fillets, linear patterns</li>
-  </ul>
+//   <h3>Design and Modeling</h3>
+//   <ul>
+//     <li>Created parts like piston, piston pin, connecting rod, crankshaft, upper and lower blocks</li>
+//     <li>Used SolidWorks features: sketching, extrusion, revolved features, cuts, chamfers, fillets, linear patterns</li>
+//   </ul>
 
-  <h3>Assembly</h3>
-  <ul>
-    <li>Assembled parts using mates and copy-mate techniques</li>
-    <li>Added basic animations and appearances for visualization</li>
-  </ul>
+//   <h3>Assembly</h3>
+//   <ul>
+//     <li>Assembled parts using mates and copy-mate techniques</li>
+//     <li>Added basic animations and appearances for visualization</li>
+//   </ul>
 
-  <h3>Takeaway</h3>
-  <ul>
-    <li>Independent project completed fully on my own</li>
-    <li>Shows practical experience with SolidWorks and mechanical design</li>
-  </ul>
-`,
-    github: "https://github.com/Haile-Homa/engine-assembly",
-    liveDemo: "https://solidworks-engine-demo.example.com"
-  }
+//   <h3>Takeaway</h3>
+//   <ul>
+//     <li>Independent project completed fully on my own</li>
+//     <li>Shows practical experience with SolidWorks and mechanical design</li>
+//   </ul>
+// `,
+//     github: "https://github.com/Haile-Homa/engine-assembly",
+//     liveDemo: "https://solidworks-engine-demo.example.com"
+//   }
 
   ,
 ];

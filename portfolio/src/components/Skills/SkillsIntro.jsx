@@ -20,9 +20,11 @@ const SkillsIntro = ({ variantsDownItem }) => {
           className=" text-sm  leading-relaxed"
           variants={variantsDownItem}
         >
-          Full-stack developer who builds reliable and easy-to-use web applications with the MERN stack. Creates modern and responsive frontends using React, Tailwind CSS, and Vanilla CSS, and builds strong backends with Node.js, Express, and MongoDB.
-          With a Mechanical Engineering background, brings solid problem-solving skills, clear thinking, and attention to detail to every project. Works confidently with Git, Webpack, and modern JavaScript, always aiming to write clean, secure, and 
-          well-organized code. Loves learning new tools and technologies to make software that’s both useful and high quality.
+          Full-stack developer specializing in building reliable and user-friendly web applications
+          with the MERN stack. Designs modern, responsive frontends using React, Tailwind CSS, and
+          Vanilla CSS, and develops strong backends with Node.js, Express, and MongoDB. Skilled in Git,
+          Webpack, and modern JavaScript, with a focus on writing clean, secure, and well-organized code.
+          Continuously explores new tools and technologies to deliver software that is both efficient and high quality.
           {/* Full-stack Developer focused on building reliable, efficient, and
           
           user-friendly applications using the MERN stack. Creates

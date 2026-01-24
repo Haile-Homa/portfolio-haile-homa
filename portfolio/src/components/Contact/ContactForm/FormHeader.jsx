@@ -26,7 +26,7 @@ const FormHeader = () => {
       <motion.p
         variants={staggerDownItem}
         className=" text-text-secondary text-center md:text-left md:pl-1.5 mb-2">
-        Please fill in the form below tp get in touch with me.
+        Please fill in the form below to get in touch with me.
       </motion.p>
 
     </motion.div>
