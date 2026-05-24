@@ -32,7 +32,7 @@ const ContactDetails = () => {
                     variants={staggerLeftItem}
                     className="flex items-center w-full  gap-1 ">
                     <img src={assets.telephoneicon} className="w-8 h-8 mr-2" alt="Phone" />
-                    <span>+251-935-636-651</span>
+                    <span>+251-956-319-797</span>
                 </motion.div>
 
 
@@ -41,7 +41,7 @@ const ContactDetails = () => {
                     variants={staggerLeftItem}
                     className="flex items-center w-full gap-1">
                     <img src={assets.locationicon} className="w-8 h-8 mr-2" alt="Location" />
-                    <span>Ethiopia - Bahir Dar University</span>
+                    <span>Ethiopia - Addis Ababa</span>
                 </motion.div>
 
             </motion.div>
