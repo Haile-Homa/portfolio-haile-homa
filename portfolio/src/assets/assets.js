@@ -65,6 +65,8 @@ import equb_thumbnail from "./projectimg/equb-thumbnail.png"
 import engine_thumbnail from "./projectimg/engine.png"
 import galleryapp_thumbnail from "./projectimg/galleryapp.png"
 import limitlesschat_thumbnail from "./projectimg/limitlesschat.png"
+import romabeauty_thumbnail from "./projectimg/romabeauty_thumbnail.png"
+import sabaimages_thumbnail from "./projectimg/sabaimages_thumbnail.png"
 
 
 // icons
@@ -131,8 +133,8 @@ const assets = {
     mediumicon,
     devtoicon,
     whatsapp,
-     discord,
-    
+    discord,
+
 
 
 
@@ -178,6 +180,8 @@ const assets = {
     galleryapp_thumbnail,
     limitlesschat_thumbnail,
     engine_thumbnail,
+    romabeauty_thumbnail,
+    sabaimages_thumbnail,
 
     /* icons */
     solidworks,

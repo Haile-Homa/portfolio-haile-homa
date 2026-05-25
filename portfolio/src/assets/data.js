@@ -429,6 +429,187 @@ export const projects = [
   ,
 
   {
+    id: "roma-beauty-spa",
+    name: "Roma Beauty Salon & Spa",
+    description:
+      "Roma Beauty Salon & Spa is a modern beauty and wellness website designed to showcase luxury salon and spa services in Addis Ababa. The platform highlights professional beauty treatments including facials, massage therapy, Moroccan baths, skincare services, steam baths, bridal makeup, and VIP spa experiences. Built with Next.js 16 and React 19, the website delivers a fast, responsive, and elegant user experience with smooth animations, interactive sections, and seamless navigation. The project focuses on modern UI/UX design, mobile responsiveness, and creating a premium digital experience that reflects the salon’s relaxing and luxurious atmosphere.",
+
+    imageUrl: assets.romabeauty_thumbnail,
+    status: "live",
+
+    technologies: [
+      {
+        name: "Next.js 16",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+        color: "#000000",
+      },
+      {
+        name: "React 19",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        color: "#61DAFB",
+      },
+      {
+        name: "Framer Motion",
+        icon: assets.framermotion,
+        color: "#0055FF",
+      },
+      {
+        name: "React Icons",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+        color: "#E91E63",
+      },
+      {
+        name: "React Scroll",
+        icon: assets.reactscroll,
+        color: "#FF6B35",
+      },
+      {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+        color: "#F7DF1E",
+      },
+      {
+        name: "Responsive Design",
+        icon: assets.responsive,
+        color: "#FF5722",
+      },
+      {
+        name: "balabalha...",
+        icon: assets.etc,
+        color: "#0762f2",
+      },
+    ],
+
+    features: [
+      "Luxury beauty salon and spa landing page",
+      "Modern and elegant UI inspired by premium spa experiences",
+      "Responsive design optimized for desktop, tablet, and mobile devices",
+      "Smooth scrolling navigation using React Scroll",
+      "Beautiful animations and transitions powered by Framer Motion",
+      "Service showcase for facials, massage therapy, steam baths, and skincare treatments",
+      "Interactive gallery and testimonial sections",
+      "Appointment booking and contact form integration",
+      "Fast performance and optimized rendering with Next.js 16",
+      "Clean and modern component-based architecture using React 19"
+    ],
+
+    github: "https://github.com/Haile-Homa",
+    liveDemo: "https://romabeauty-kappa.vercel.app/"
+  }
+  ,
+{
+  id: "saba-images",
+  name: "Saba Images AI",
+  description:
+    "Saba Images AI is a full-stack AI-powered image generation and editing platform that allows users to create, transform, and enhance visuals using intelligent tools and simple prompts. The platform enables users to generate images from ideas, remove backgrounds instantly, improve profile pictures, transform scenes, and edit visuals with AI-powered workflows. Built with Next.js 16, React 19, Firebase authentication, Zustand state management, and a modern responsive interface, the application delivers a fast and smooth user experience across all devices. The backend is powered by Express.js and integrates services like Cloudinary, ImageKit, MongoDB, and Firebase Admin for secure authentication, image storage, media processing, and scalable API handling. Saba Images AI is designed for creators, designers, and content creators who want to generate and share professional visuals quickly and efficiently.",
+
+  imageUrl: assets.sabaimages_thumbnail,
+  status: "live",
+
+  technologies: [
+    {
+      name: "Next.js 16",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      color: "#000000",
+    },
+    {
+      name: "React 19",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      color: "#61DAFB",
+    },
+    {
+      name: "Firebase",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+      color: "#FFCA28",
+    },
+    {
+      name: "Zustand",
+      icon: assets.zustand,
+      color: "#7C3AED",
+    },
+    {
+      name: "React Markdown",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
+      color: "#8fce00",
+    },
+    {
+      name: "Axios",
+      icon: assets.axios,
+      color: "#5A29E4",
+    },
+    {
+      name: "React Toastify",
+      icon: assets.reactToastify,
+      color: "#FF9800",
+    },
+    {
+      name: "Lucide React",
+      icon: assets.lucide,
+      color: "#111827",
+    },
+    {
+      name: "Express.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      color: "#333333",
+    },
+    {
+      name: "MongoDB",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      color: "#47A248",
+    },
+    {
+      name: "Cloudinary",
+      icon: assets.cloudinary,
+      color: "#3448C5",
+    },
+    {
+      name: "ImageKit",
+      icon: assets.imagekit,
+      color: "#00A8E8",
+    },
+    {
+      name: "Firebase Admin",
+      icon: assets.firebaseadmin,
+      color: "#FFA000",
+    },
+    {
+      name: "JWT Authentication",
+      icon: assets.jwt,
+      color: "#EF4444",
+    },
+    {
+      name: "Multer",
+      icon: assets.multer,
+      color: "#16A34A",
+    },
+    {
+      name: "balabalha...",
+      icon: assets.etc,
+      color: "#0762f2",
+    },
+  ],
+
+  features: [
+    "AI-powered image generation from text prompts",
+    "Background removal with instant transparent image creation",
+    "Advanced image editing and scene transformation tools",
+    "Profile picture enhancement and image quality improvement",
+    "Modern responsive interface optimized for all screen sizes",
+    "Authentication and secure user management using Firebase",
+    "Global state management with Zustand for smooth user experience",
+    "Markdown-supported AI responses using React Markdown and remark-gfm",
+    "Cloud-based image storage and optimization with Cloudinary and ImageKit",
+    "RESTful backend APIs built with Express.js and MongoDB",
+    "Secure authentication using JWT and Firebase Admin",
+    "Image upload handling with Multer middleware",
+    "Toast notifications and interactive feedback system",
+    "Instant sharing support for Telegram, LinkedIn, and social platforms"
+  ],
+
+  github: "https://github.com/Haile-Homa/",
+  liveDemo: "https://saba-imgs.vercel.app/"
+},
+  {
     id: "gallery-app",
     name: "Gallery App",
     description: "Gallery App is a future Android application that I am currently designing in Figma. This project showcases my ability in  graphic and UI/UX design skills, focusing on creating a clean, modern, and intuitive layout. The app will allow users to browse, organize, and manage their photos and videos with smooth interactions and thoughtful navigation. While the Android implementation in Kotlin is planned for the future, the design work demonstrates my skills in creating visually appealing and user-friendly experiences that can translate seamlessly into a mobile app.",
@@ -526,74 +707,74 @@ export const projects = [
 
 
   // ========== MECHANICAL PROJECTS ==========
-//   {
-//     id: "solidworks-engine",
-//     name: "Engine Assembly (SolidWorks)",
-//     type: "mechanical",
-//     shortDescription: "3D modeling and assembly of engine parts in SolidWorks",
-//     description: "During my Mechanical Engineering studies at Bahir Dar University, I designed and modeled this engine project on my own. I created all parts, including the piston, piston pin, connecting rod, crankshaft, upper block, and lower block, and assembled them into a half-cut engine model. This project helped me practice important SolidWorks skills like sketching, extrusion, revolved features, cuts, chamfers, fillets, patterns, and assembly mates.",
-//     imageUrl: assets.engine_thumbnail,
-//     videoUrl: "https://ia601409.us.archive.org/16/items/soldiworks/soldiworks.mp4",
-//     images: [
-//       assets.mech1,
-//       assets.mech2,
-//       assets.mech3,
-//       assets.mech4,
-//       assets.mech5,
-//       assets.mech6,
-//       assets.mech7,
-//       assets.mech8,
-//       assets.mech9,
-//       assets.mech10,
-//       assets.mech11,
-//       assets.mech12,
-//       assets.mech13,
-//       assets.mech14,
-//       assets.mech15,
-//       assets.mech16,
-//     ],
+  //   {
+  //     id: "solidworks-engine",
+  //     name: "Engine Assembly (SolidWorks)",
+  //     type: "mechanical",
+  //     shortDescription: "3D modeling and assembly of engine parts in SolidWorks",
+  //     description: "During my Mechanical Engineering studies at Bahir Dar University, I designed and modeled this engine project on my own. I created all parts, including the piston, piston pin, connecting rod, crankshaft, upper block, and lower block, and assembled them into a half-cut engine model. This project helped me practice important SolidWorks skills like sketching, extrusion, revolved features, cuts, chamfers, fillets, patterns, and assembly mates.",
+  //     imageUrl: assets.engine_thumbnail,
+  //     videoUrl: "https://ia601409.us.archive.org/16/items/soldiworks/soldiworks.mp4",
+  //     images: [
+  //       assets.mech1,
+  //       assets.mech2,
+  //       assets.mech3,
+  //       assets.mech4,
+  //       assets.mech5,
+  //       assets.mech6,
+  //       assets.mech7,
+  //       assets.mech8,
+  //       assets.mech9,
+  //       assets.mech10,
+  //       assets.mech11,
+  //       assets.mech12,
+  //       assets.mech13,
+  //       assets.mech14,
+  //       assets.mech15,
+  //       assets.mech16,
+  //     ],
 
-//     status: "live",
-//     technologies: [
-//       { name: "SolidWorks", icon: assets.solidworks, color: "#D66224" }
-//     ],
-//     features: [
-//       "Modeled all main engine components from scratch ",
-//       "Designed precise parts like piston, crankshaft, and connecting rod ",
-//       "Used Extrude, Revolve, Fillet, and Cut features for shaping ",
-//       "Applied mates to assemble parts with correct motion ",
-//       "Created a half-cut engine model for better internal view ",
-//       "Added simple motion simulation to show rotation and movement ",
-//       "Practiced section views and exploded assembly views ",
-//       "Ensured dimensional accuracy and smooth fitting of parts ",
-//       "Learned real-world engine mechanism and assembly workflow ",
-//       "Practiced section views ",
-//     ],
-//     richDescription: `
-//   <h2>Project Overview</h2>
-//   <p>This engine assembly project was completed independently during my Mechanical Engineering studies at Bahir Dar University. I designed and modeled all engine parts and assembled them into a half-cut engine model.</p>
+  //     status: "live",
+  //     technologies: [
+  //       { name: "SolidWorks", icon: assets.solidworks, color: "#D66224" }
+  //     ],
+  //     features: [
+  //       "Modeled all main engine components from scratch ",
+  //       "Designed precise parts like piston, crankshaft, and connecting rod ",
+  //       "Used Extrude, Revolve, Fillet, and Cut features for shaping ",
+  //       "Applied mates to assemble parts with correct motion ",
+  //       "Created a half-cut engine model for better internal view ",
+  //       "Added simple motion simulation to show rotation and movement ",
+  //       "Practiced section views and exploded assembly views ",
+  //       "Ensured dimensional accuracy and smooth fitting of parts ",
+  //       "Learned real-world engine mechanism and assembly workflow ",
+  //       "Practiced section views ",
+  //     ],
+  //     richDescription: `
+  //   <h2>Project Overview</h2>
+  //   <p>This engine assembly project was completed independently during my Mechanical Engineering studies at Bahir Dar University. I designed and modeled all engine parts and assembled them into a half-cut engine model.</p>
 
-//   <h3>Design and Modeling</h3>
-//   <ul>
-//     <li>Created parts like piston, piston pin, connecting rod, crankshaft, upper and lower blocks</li>
-//     <li>Used SolidWorks features: sketching, extrusion, revolved features, cuts, chamfers, fillets, linear patterns</li>
-//   </ul>
+  //   <h3>Design and Modeling</h3>
+  //   <ul>
+  //     <li>Created parts like piston, piston pin, connecting rod, crankshaft, upper and lower blocks</li>
+  //     <li>Used SolidWorks features: sketching, extrusion, revolved features, cuts, chamfers, fillets, linear patterns</li>
+  //   </ul>
 
-//   <h3>Assembly</h3>
-//   <ul>
-//     <li>Assembled parts using mates and copy-mate techniques</li>
-//     <li>Added basic animations and appearances for visualization</li>
-//   </ul>
+  //   <h3>Assembly</h3>
+  //   <ul>
+  //     <li>Assembled parts using mates and copy-mate techniques</li>
+  //     <li>Added basic animations and appearances for visualization</li>
+  //   </ul>
 
-//   <h3>Takeaway</h3>
-//   <ul>
-//     <li>Independent project completed fully on my own</li>
-//     <li>Shows practical experience with SolidWorks and mechanical design</li>
-//   </ul>
-// `,
-//     github: "https://github.com/Haile-Homa/engine-assembly",
-//     liveDemo: "https://solidworks-engine-demo.example.com"
-//   }
+  //   <h3>Takeaway</h3>
+  //   <ul>
+  //     <li>Independent project completed fully on my own</li>
+  //     <li>Shows practical experience with SolidWorks and mechanical design</li>
+  //   </ul>
+  // `,
+  //     github: "https://github.com/Haile-Homa/engine-assembly",
+  //     liveDemo: "https://solidworks-engine-demo.example.com"
+  //   }
 
   ,
 ];
