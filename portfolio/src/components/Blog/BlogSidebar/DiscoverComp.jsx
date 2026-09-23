@@ -19,7 +19,7 @@ const DiscoverComp = ({ discover }) => {
             variants={fadeInRight}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 1, ease: "easeOut" }}
         >
             <h2 className="text-xl font-semibold mb-4">Discover My Work</h2>

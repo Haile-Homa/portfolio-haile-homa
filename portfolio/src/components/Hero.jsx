@@ -28,7 +28,7 @@ const Hero = () => {
                 variants={fadeInRight}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 1, ease: "easeOut" }}
             ></motion.div>
 
@@ -38,7 +38,7 @@ const Hero = () => {
                 variants={staggerLeftContainer}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.3 }}
             >
                 <div className="w-full md:w-1/2 md:mt-0">
                     <motion.h1

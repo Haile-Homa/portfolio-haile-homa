@@ -13,7 +13,7 @@ const BlogList = ({ posts }) => {
             y: index % 3 === 0 ? 100 : 0     // every 3rd → down
           }}
           whileInView={{ opacity: 1, x: 0, y: 0 }} // 👀 triggers on scroll
-          viewport={{ once: false, amount: 0.3 }}   // run once, 20% visible
+          viewport={{ once: true, amount: 0.3 }}   // run once, 20% visible
           transition={{ duration: 0.6 }}
 
         >

@@ -16,7 +16,7 @@ const ContactDetails = () => {
                 variants={staggerLeftContainer}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.3 }}
                 className="  flex flex-col text-sm space-y-4">
 
                 {/* Email */}

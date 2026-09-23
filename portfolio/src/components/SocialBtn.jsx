@@ -45,7 +45,7 @@ function SocialBtn({ exclude = [] }) {
       variants={staggerRightContainer}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
       className="flex flex-wrap gap-4 md:gap-10"
     >
       {filteredButtons.map((btn, i) => (

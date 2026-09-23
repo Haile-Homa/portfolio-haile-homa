@@ -13,7 +13,7 @@ const TopicsComp = ({ topics }) => {
             variants={fadeInDown}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 1, ease: "easeOut" }}
         >
 

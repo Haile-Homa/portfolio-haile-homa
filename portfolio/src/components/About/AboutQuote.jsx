@@ -18,7 +18,7 @@ const AboutQuote = () => {
                     variants={fadeInLeft}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
                     Joining the digital world is not just the best choice for today — it’s also the key to the future .
@@ -28,7 +28,7 @@ const AboutQuote = () => {
                     variants={staggerRightContainer}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
                     <SocialBtn staggerRightItem={staggerRightItem} />

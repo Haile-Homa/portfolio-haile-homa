@@ -13,7 +13,7 @@ const ProjectIntro = () => {
                     variants={fadeInDown}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
                     Projects
@@ -27,7 +27,7 @@ const ProjectIntro = () => {
                     variants={fadeInUp}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                 >
                     This portfolio brings together projects that highlight different sides of web development — design, 

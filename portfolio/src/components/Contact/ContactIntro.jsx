@@ -15,7 +15,7 @@ const ContactIntro = () => {
                 variants={fadeInDown}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 1, ease: "easeOut" }}
                 className="text-2xl md:text-3xl font-bold px-5 pt-4  my-6">
                 Let’s Work Together!
@@ -27,7 +27,7 @@ const ContactIntro = () => {
                     variants={fadeInRight}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                     className=" text-start    text-text-secondary mb- px-5 ">
                     I’m always open to opportunities, collaborations, and challenges  especially

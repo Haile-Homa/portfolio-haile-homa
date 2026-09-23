@@ -12,7 +12,7 @@ const BlogHeader = () => {
                 variants={fadeInDown}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.3 }}
                 transition={{ duration: 1, ease: "easeOut" }}
             >
                 Recent Posts <span className="text-blue-300 text-2xl ">/</span> Blog

@@ -12,7 +12,7 @@ const SubmitButton = ({ status }) => {
       variants={fadeInUp}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 1, ease: "easeOut" }}
       type="submit"
       disabled={status === "sending"}

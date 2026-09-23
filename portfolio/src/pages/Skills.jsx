@@ -27,7 +27,7 @@ const Skills = () => {
         variants={staggerDownContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
       >
         <SkillsIntro variantsDownItem={staggerDownItem} />
       </motion.div>
@@ -40,7 +40,7 @@ const Skills = () => {
           variants={staggerLeftContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
         >
           <SkillsBarSection skills={skills} variantsLeftItem={staggerLeftItem} />
         </motion.div>
@@ -53,7 +53,7 @@ const Skills = () => {
             variants={staggerRightContainer}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <SkillsCircleSection coreSkills={coreSkills} variantsRightItem={staggerRightItem} />
           </motion.div>
@@ -64,7 +64,7 @@ const Skills = () => {
             variants={staggerLeftContainer}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
           >
             <SkillsCardGroup variantsLeftItem={staggerLeftItem} variantsRightItem={staggerRightItem} variantsDownItem={staggerDownItem} />
           </motion.div>

@@ -69,7 +69,7 @@ const Services = () => {
                     variants={fadeInLeft}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                     className="text-4xl font-extrabold text-gray-900 dark:text-gray-200  mb-2">
                     My Services
@@ -78,7 +78,7 @@ const Services = () => {
                     variants={fadeInRight}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.3 }}
+                    viewport={{ once: true, amount: 0.3 }}
                     transition={{ duration: 1, ease: "easeOut" }}
                     className="text-text-secondary max-w-2xl mx-auto">
                     I help you build, design, and deploy powerful digital experiences
@@ -92,7 +92,7 @@ const Services = () => {
                 variants={staggerLeftContainer}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: false, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.3 }}
 
                 className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {services.map((service, index) => (

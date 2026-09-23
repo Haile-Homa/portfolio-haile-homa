@@ -16,7 +16,7 @@ const FormFields = () => {
           variants={fadeInLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, ease: "easeOut" }}
           type="text"
           name="from_name"
@@ -30,7 +30,7 @@ const FormFields = () => {
           variants={fadeInRight}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, ease: "easeOut" }}
           type="text"
           name="last_name"
@@ -46,7 +46,7 @@ const FormFields = () => {
           variants={fadeInLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, ease: "easeOut" }}
           type="email"
           name="reply_to"
@@ -59,7 +59,7 @@ const FormFields = () => {
           variants={fadeInRight}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 1, ease: "easeOut" }}
           type="text"
           name="phone"
@@ -73,7 +73,7 @@ const FormFields = () => {
         variants={fadeInLeft}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1, ease: "easeOut" }}
         type="text"
         name="subject"
@@ -87,7 +87,7 @@ const FormFields = () => {
         variants={fadeInRight}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1, ease: "easeOut" }}
         name="message"
         rows="5"
